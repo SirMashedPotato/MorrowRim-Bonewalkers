@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>MorrowRim_BonewalkerLesser</defName>
+		<label>Bonewalker creation Vol. I</label>
+		<description>Allows for the construction of the bonewalker forge, as well as the creation of lesser bonewalkers at the forge.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<tags>
+		</tags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MorrowRim_BonewalkerGreater</defName>
+		<label>Bonewalker creation Vol. II</label>
+		<description>Allows for the creation of greater bonewalkers at the bonewalker forge.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_BonewalkerLesser</li>
+		</prerequisites>
+		<tags>
+		</tags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MorrowRim_BonewalkerAdvanced</defName>
+		<label>Bonewalker creation Vol. III</label>
+		<description>Allows for the creation of bonelords at the bonewalker forge.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<tab>ESCP_DunmerTab</tab>
+		<prerequisites>
+			<li>MorrowRim_BonewalkerGreater</li>
+		</prerequisites>
+		<tags>
+		</tags>
+	</ResearchProjectDef>
+
+</Defs>

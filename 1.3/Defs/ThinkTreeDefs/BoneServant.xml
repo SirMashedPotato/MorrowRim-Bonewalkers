@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThinkTreeDef>
+    <defName>MorrowRim_BonewalkerConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+          <subNodes>
+            <!-- Bonewalkers don't run away -->
+			<!--
+            <li Class="MorrowRim_Bonewalkers.JobGiver_BonewalkerFlee" />
+			-->
+
+            <!-- Join auto joinable caravan -->
+            <li Class="ThinkNode_Subtree">
+              <treeDef>JoinAutoJoinableCaravan</treeDef>
+            </li>
+			
+			<!-- Bonewalkers will literally chase the enemies to the edges of the map -->
+            <li Class="MorrowRim_Bonewalkers.JobGiver_AIGotoNearestHostile_ButSmartly" />
+
+            
+            <!-- Lord directives -->
+            <li Class="ThinkNode_Subtree">
+              <treeDef>LordDutyConstant</treeDef>
+            </li>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+</Defs>

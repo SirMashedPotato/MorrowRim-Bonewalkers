@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Base -->
+	
+	<RecipeDef Name="MorrowRim_BonewalkerRecipeBase" Abstract="True">
+		<workAmount>20000</workAmount>
+		<workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>false</interruptIfIngredientIsRotting>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>CorpsesHumanlike</li>
+			  </categories>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+					<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>25</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>CorpsesHumanlike</li>
+		  </categories>
+		  <thingDefs>
+			<li>Steel</li>
+		  </thingDefs>
+		  <specialFiltersToDisallow>
+		  </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<unfinishedThingDef>MorrowRim_UnfinishedBonewalker</unfinishedThingDef>
+	</RecipeDef>
+	
+	<!-- Lesser bonewalker -->
+	
+	<RecipeDef ParentName="MorrowRim_BonewalkerRecipeBase">
+		<defName>MorrowRim_BonewalkerCreationLesser</defName>
+		<label>create lesser bonewalker</label>
+		<description>Create a lesser bonewalker from one humanlike corpse, and 25 steel.</description>
+		<jobString>Creating lesser bonewalker.</jobString>
+		<researchPrerequisite>MorrowRim_BonewalkerLesser</researchPrerequisite>
+		<products>
+		  <MorrowRim_InactiveBonewalkerLesser>1</MorrowRim_InactiveBonewalkerLesser>
+		</products>
+		<skillRequirements>
+		  <Crafting>3</Crafting>
+		  <Medicine>3</Medicine>
+		  <Intellectual>4</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<!-- Greater bonewalker -->
+	
+	<RecipeDef ParentName="MorrowRim_BonewalkerRecipeBase">
+		<defName>MorrowRim_BonewalkerCreationGreater</defName>
+		<label>create greater bonewalker</label>
+		<description>Create a greater bonewalker from one humanlike corpse, and 25 steel.</description>
+		<jobString>Creating greater bonewalker.</jobString>
+		<researchPrerequisite>MorrowRim_BonewalkerGreater</researchPrerequisite>
+		<products>
+		  <MorrowRim_InactiveBonewalkerGreater>1</MorrowRim_InactiveBonewalkerGreater>
+		</products>
+		<skillRequirements>
+		  <Crafting>6</Crafting>
+		  <Medicine>6</Medicine>
+		  <Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<!-- Bonelord -->
+	
+	<RecipeDef ParentName="MorrowRim_BonewalkerRecipeBase">
+		<defName>MorrowRim_BonelordCreation</defName>
+		<label>create bonelord</label>
+		<description>Create a bonelord from one humanlike corpse and 75 textiles.</description>
+		<jobString>Creating bonelord.</jobString>
+		<researchPrerequisite>MorrowRim_BonewalkerAdvanced</researchPrerequisite>
+		<products>
+		  <MorrowRim_InactiveBonelord>1</MorrowRim_InactiveBonelord>
+		</products>
+		<skillRequirements>
+		  <Crafting>8</Crafting>
+		  <Medicine>8</Medicine>
+		  <Intellectual>15</Intellectual>
+		</skillRequirements>
+		<interruptIfIngredientIsRotting>false</interruptIfIngredientIsRotting>
+		<ingredients Inherit="False">
+		  <li>
+			<filter>
+			  <categories>
+				<li>CorpsesHumanlike</li>
+			  </categories>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <categories>
+				<li>Textiles</li>
+			  </categories>
+			</filter>
+			<count>75</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter Inherit="False">
+		  <categories>
+			<li>CorpsesHumanlike</li>
+			<li>Textiles</li>
+		  </categories>
+		  <thingDefs>
+		  </thingDefs>
+		  <specialFiltersToDisallow>
+		  </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+	</RecipeDef>
+  
+</Defs>

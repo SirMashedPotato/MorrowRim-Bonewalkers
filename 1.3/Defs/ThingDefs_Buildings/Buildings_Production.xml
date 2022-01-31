@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Bases -->
+	
+	<ThingDef Name="MorrowRim_BonewalkerForge_Base" ParentName="BenchBase" Abstract="True">
+		<thingClass>Building_WorkTable</thingClass>
+		<rotatable>false</rotatable>
+		 <graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawSize>(6,6)</drawSize>
+		  <drawOffset>0,0,1</drawOffset>
+		  <shadowData>
+			<volume>(2.9, 0.3, 0.5)</volume>
+			<offset>(0, 0, 0)</offset>
+		  </shadowData>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		</graphicData>
+		<stuffCategories>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+		  <WorkToBuild>4000</WorkToBuild>
+		  <MaxHitPoints>180</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(5,4)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>25</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+		  <li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+		  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+		  <li>PlaceWorker_ShowFacilitiesConnections</li>
+		  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="MorrowRim_BonewalkerForge_Base">
+		<defName>MorrowRim_BonewalkerForge</defName>
+		<label>bonewalker forge</label>
+		<description>A forge designed specifically for creating bonewalkers. Chains hanging from beams are used for holding up the corpse, and candles are used for masking the stench of the deceased. Ritually prepared skulls are not only used to guide the spirit into its new body, but also to ward of vengeful wraiths.</description>
+		<graphicData>
+			  <texPath>Things/Building/Production/MorrowRim_BonewalkerForge</texPath>
+		</graphicData>
+		<costList>
+			<Steel>75</Steel>
+		</costList>
+		<recipes>
+			<li>MorrowRim_BonewalkerCreationLesser</li>
+			<li>MorrowRim_BonewalkerCreationGreater</li>
+			<li>MorrowRim_BonelordCreation</li>
+		</recipes>
+		<researchPrerequisites>
+			<li>MorrowRim_BonewalkerLesser</li>
+		</researchPrerequisites>
+		<comps>
+		  <li Class="CompProperties_AffectedByFacilities" MayRequire="SirMashedPotato.ESCP.Dunmer">
+			<linkableFacilities>
+			  <li>ESCP_AshBurialPit</li>
+			  <li>ESCP_AshBurialPit_Round</li>
+			  <li>ESCP_AshBurialPit_Small</li>
+			</linkableFacilities>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

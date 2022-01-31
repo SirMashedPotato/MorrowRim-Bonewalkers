@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>ESCP_DunmerRole</defName>
+		<cooldownTicks>600000</cooldownTicks>
+	</AbilityGroupDef>
+	
+	<AbilityGroupDef>
+		<defName>MorrowRim_BonewalkerRole</defName>
+		<cooldownTicks>300000</cooldownTicks>
+	</AbilityGroupDef>
+	
+	<!-- Base -->
+	
+	<AbilityDef Name="MorrowRim_BonewalkerAbility_Base" Abstract="True">
+		<groupDef>MorrowRim_BonewalkerRole</groupDef>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<warmupSound>AnimalCalm_Resolve</warmupSound>
+		<uiOrder>1</uiOrder>
+		<comps>
+		</comps>
+		<statBases>
+		  <!--<Ability_Duration>3000</Ability_Duration>-->
+		</statBases>
+		<verbProperties>
+		  <drawAimPie>False</drawAimPie>
+		  <range>-1</range>
+		  <warmupTime>3.0</warmupTime>
+		  <targetParams>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<mustBeSelectable>true</mustBeSelectable>
+			<neverTargetHostileFaction>true</neverTargetHostileFaction>
+		  </targetParams>
+		</verbProperties>
+	</AbilityDef>
+	
+	<!-- Specifics -->
+
+	<AbilityDef ParentName="MorrowRim_BonewalkerAbility_Base">
+		<defName>MorrowRim_BonewalkerAbility_Heal</defName>
+		<label>heal bonewalker</label>
+		<description>Instantly heal all wounds and restore all missing parts, on the targeted bonewalker, or bonelord.</description>
+		<iconPath>UI/Abilities/MorrowRim_BonewalkerAbility_Heal</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/Abilities/MorrowRim_BonewalkerMote_Heal</warmupMoteSocialSymbol>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_BonewalkerHeal">
+		  </li>
+		</comps>
+		<verbProperties>
+		  <verbClass>MorrowRim_Bonewalkers.Verb_CastAbilityTouch_Bonewalker</verbClass>
+		</verbProperties>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="MorrowRim_BonewalkerAbility_Base">
+		<defName>MorrowRim_BonewalkerAbility_Upgrade</defName>
+		<label>improve bonewalker</label>
+		<description>Improve the quality of the targeted bonewalker, or bonelord, by one level, up to legendary +9.</description>
+		<iconPath>UI/Abilities/MorrowRim_BonewalkerAbility_Upgrade</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/Abilities/MorrowRim_BonewalkerMote_Upgrade</warmupMoteSocialSymbol>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_BonewalkerUpgrade">
+			<requriedResearch>MorrowRim_BonewalkerGreater</requriedResearch>
+		  </li>
+		</comps>
+		<verbProperties>
+		  <verbClass>MorrowRim_Bonewalkers.Verb_CastAbilityTouch_BonewalkerUpgrade</verbClass>
+		</verbProperties>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="MorrowRim_BonewalkerAbility_Base">
+		<defName>MorrowRim_BonewalkerAbility_ShuffleImbuement</defName>
+		<label>shuffle imbuement</label>
+		<description>Shuffle the active imbuement of a bonewalker, replacing it with a different randomly selected imbuement.</description>
+		<iconPath>UI/Abilities/MorrowRim_BonewalkerAbility_ShuffleImbuement</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/Abilities/MorrowRim_BonewalkerMote_ShuffleImbuement</warmupMoteSocialSymbol>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_BonewalkerShuffleImbuement">
+		  </li>
+		</comps>
+		<verbProperties>
+		  <verbClass>MorrowRim_Bonewalkers.Verb_CastAbilityTouch_BonewalkerShuffleImbuement</verbClass>
+		</verbProperties>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="MorrowRim_BonewalkerAbility_Base">
+		<defName>MorrowRim_BonewalkerAbility_Create</defName>
+		<label>create lesser bonewalker</label>
+		<description>Hastily create a lesser bonewalker from a humanlike corpse. The quality will depend on the users intellectual skill, limited to good level quality, and it will not receive any bonuses. However the newly created bonewalker will not be afflicted with animation sickness.</description>
+		<iconPath>UI/Abilities/MorrowRim_BonewalkerAbility_Resurrect</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/Abilities/MorrowRim_BonewalkerMote_Resurrect</warmupMoteSocialSymbol>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_BonewalkerCreate">
+			<skill>Intellectual</skill>
+			<requriedResearch>MorrowRim_BonewalkerLesser</requriedResearch>
+			<pawnKind>MorrowRim_BonewalkerLesser</pawnKind>
+			<qualityHediff>MorrowRim_BonewalkerQuality</qualityHediff>
+			<!--<awakeningHediff>DarkDescent_ServantAwakening</awakeningHediff>-->
+			<additionalHediffs>
+				<li>MorrowRim_BonewalkerPassive</li>
+			</additionalHediffs>
+		  </li>
+		</comps>
+		<verbProperties>
+		  <warmupTime>10.0</warmupTime>
+		  <verbClass>MorrowRim_Bonewalkers.Verb_CastAbilityTouch_BonewalkerCreate</verbClass>
+		   <targetParams Inherit="false">
+			<canTargetItems>true</canTargetItems>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<mustBeSelectable>true</mustBeSelectable>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		  </targetParams>
+		</verbProperties>
+	</AbilityDef>
+	
+	<!--	Opted for create + bonewalkers and bonelords dessicating upon death, although this should still work if enabled
+	<AbilityDef ParentName="MorrowRim_BonewalkerAbility_Base">
+		<defName>MorrowRim_BonewalkerAbility_Ressurect</defName>
+		<label>ressurect bonewalker</label>
+		<description>Ressurect a bonewalker, or bonelord, applying reanimation sickness to it.</description>
+		<iconPath>UI/Abilities/MorrowRim_BonewalkerAbility_Resurrect</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/Abilities/MorrowRim_BonewalkerMote_Resurrect</warmupMoteSocialSymbol>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_BonewalkerRessurect">
+			<ressurectionhediff>DarkDescent_ServantAwakening</ressurectionhediff>
+		  </li>
+		</comps>
+		<verbProperties>
+		  <warmupTime>10.0</warmupTime>
+		  <verbClass>MorrowRim_Bonewalkers.Verb_CastAbilityTouch_BonewalkerRessurect</verbClass>
+		   <targetParams Inherit="false">
+			<canTargetItems>true</canTargetItems>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<mustBeSelectable>true</mustBeSelectable>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		  </targetParams>
+		</verbProperties>
+	</AbilityDef>
+	-->
+	
+	<AbilityDef ParentName="MorrowRim_BonewalkerAbility_Base">
+		<defName>MorrowRim_BonewalkerAbility_Pacify</defName>
+		<label>pacify grave revenant</label>
+		<description>Pacify a grave revenant, forcefully evicting it from the targeted bonewalker, or bonelord.</description>
+		<groupDef>ESCP_DunmerRole</groupDef>
+		<iconPath>UI/Abilities/MorrowRim_BonewalkerAbility_Pacify</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/Abilities/MorrowRim_BonewalkerMote_Pacify</warmupMoteSocialSymbol>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_BonewalkerPacify">
+		  </li>
+		</comps>
+		<verbProperties>
+		  <verbClass>MorrowRim_Bonewalkers.Verb_CastAbilityTouch_BonewalkerPacify</verbClass>
+		</verbProperties>
+	</AbilityDef>
+
+	<!--
+	<AbilityDef>
+		<defName>ESCP_BosmerAnimalCommand</defName>
+		<label>animal combat command</label>
+		<description>Guide nearby tamed animals, boosting their combat prowess. The effect remains attached to the caster for 24 hours.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<iconPath>UI/Abilities/ESCP_BosmerAbilityCommand</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BosmerAbilityCommand</warmupMoteSocialSymbol>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>ESCP_BosmerRole</groupDef>
+		<hotKey>Misc12</hotKey>
+		<uiOrder>3</uiOrder>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+		  <Ability_Duration>1000</Ability_Duration>
+		  <Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0.5</warmupTime>
+		  <range>9.9</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>ESCP_BosmerAnimalCombatCommand</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>true</replaceExisting>
+		  </li>
+		</comps>
+	</AbilityDef>
+	-->
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+
+    <MorrowRim_BonewalkerGraveRevenant_LetterLabel>grave revenant ({0})</MorrowRim_BonewalkerGraveRevenant_LetterLabel>
+    <MorrowRim_BonewalkerGraveRevenant_LetterText>{0} has become possessed by a wraith, driving it completely mad in the process. It will now seek out living flesh, in an attempt to make itself whole again.\n\nCaution is advised, as the wraith has empowered {0}.</MorrowRim_BonewalkerGraveRevenant_LetterText>
+	
+	<MorrowRim_Bonewalker_NeedResearch>You must research {0} before you can use this ability.</MorrowRim_Bonewalker_NeedResearch>
+
+</LanguageData>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		
+	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_BonewalkerBase" Abstract="True">
+		<statBases>
+			<PsychicSensitivity>2</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>70</ComfyTemperatureMax>
+			<MarketValue>400</MarketValue>
+		</statBases>
+		<comps>
+		</comps>
+		<race>
+		  <fleshType>MorrowRim_BonewalkerFlesh</fleshType>
+		  <deathActionWorkerClass>MorrowRim_Bonewalkers.DeathActionWorker_Bonewalker</deathActionWorkerClass>
+		  <predator>false</predator>
+		  <maxPreyBodySize>1.5</maxPreyBodySize>
+		  <body>Human</body>
+		  <baseBodySize>1.0</baseBodySize>
+		  <baseHealthScale>1.5</baseHealthScale>
+		  <foodType>None</foodType>
+		  <needsRest>false</needsRest>
+		  <leatherDef>Leather_Human</leatherDef>
+		  <useMeatFrom>Human</useMeatFrom>
+		  <wildness>0</wildness>
+		  <petness>0</petness>
+		  <trainability>Intermediate</trainability>
+		  <showTrainables>false</showTrainables>
+		  <hideTrainingTab>true</hideTrainingTab>
+		  <canBePredatorPrey>true</canBePredatorPrey>
+		  <herdMigrationAllowed>false</herdMigrationAllowed>
+		  <canReleaseToWild>false</canReleaseToWild>
+		  <lifeExpectancy>30</lifeExpectancy>
+		  <gestationPeriodDays>0</gestationPeriodDays>
+		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+		  <manhunterOnDamageChance>1</manhunterOnDamageChance>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+
+		  <!--<thinkTreeMain>MorrowRim_Bonewalker</thinkTreeMain>-->
+		  <thinkTreeConstant>MorrowRim_BonewalkerConstant</thinkTreeConstant>
+
+		  <lifeStageAges>
+			<li>
+			  <def>MorrowRim_Bonewalker</def>
+			  <minAge>0</minAge>
+			</li>
+		  </lifeStageAges>
+		  <ageGenerationCurve>
+			<points>
+			  <li>(0,0)</li>
+			  <li>(1,100)</li>
+			  <li>(2,0)</li>
+			</points>
+		  </ageGenerationCurve>
+		</race>
+		<tradeTags>
+			<li>MorrowRim_Bonewalker</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef Name="MorrowRim_BonewalkerKindBase" ParentName="AnimalKindBase" Abstract="True">
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<wildGroupSize>1</wildGroupSize>
+	</PawnKindDef>
+  
+</Defs>

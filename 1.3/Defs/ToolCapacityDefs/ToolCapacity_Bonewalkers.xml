@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ToolCapacityDef>
+    <defName>MorrowRim_BonewalkerBite</defName>
+    <label>Bite</label>
+  </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>MorrowRim_BonewalkerScratch</defName>
+    <label>Scratch</label>
+  </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>MorrowRim_BonewalkerBlunt</defName>
+    <label>Blunt</label>
+  </ToolCapacityDef>
+
+</Defs>

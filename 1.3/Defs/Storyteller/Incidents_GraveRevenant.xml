@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>MorrowRim_BonewalkerGraveRevenant</defName>
+		<label>grave revenant</label>
+		<category>ThreatSmall</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<letterDef>ThreatSmall</letterDef>
+		<workerClass>MorrowRim_Bonewalkers.IncidentWorker_GraveRevenant</workerClass>
+		<baseChance>0.3</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+	
+</Defs>

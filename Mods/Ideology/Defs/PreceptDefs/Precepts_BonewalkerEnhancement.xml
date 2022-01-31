@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>MorrowRim_BonewalkerSupremecy</defName>
+		<label>bonewalker enhancement</label>
+		<iconPath>UI/Issues/MorrowRim_Bonewalker</iconPath>
+	</IssueDef>
+
+	<PreceptDef>
+		<defName>MorrowRim_BonewalkerSupremecy_Strength</defName>
+		<issue>MorrowRim_BonewalkerSupremecy</issue>
+		<label>strength</label>
+		<description>Bonewalkers are our avengers, and as such they must be ready to fight.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bonewalker strength is enhanced, causing them to deal more damage.</description>
+		<impact>Low</impact>
+		<statOffsets>
+			
+		</statOffsets>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+		
+		</comps>
+		<requiredMemes>
+		  <li>MorrowRim_BonewalkerSupremacy</li>
+		</requiredMemes>
+	</PreceptDef>
+  
+	<PreceptDef>
+		<defName>MorrowRim_BonewalkerSupremecy_Durability</defName>
+		<issue>MorrowRim_BonewalkerSupremecy</issue>
+		<label>durability</label>
+		<description>Bonewalkers are our guardians, and as such they must be ready to protect.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bonewalker durability is enhanced, causing them to take less damage.</description>
+		<impact>Low</impact>
+		<statOffsets>
+			
+		</statOffsets>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+		</comps>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>MorrowRim_BonewalkerSupremecy_Quality</defName>
+		<issue>MorrowRim_BonewalkerSupremecy</issue>
+		<label>quality</label>
+		<description>Bonewalkers are only as strong as the hands that make them.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any bonewalkers activated will be one quality level higher, being able to surpass legendary quality.</description>
+		<impact>Low</impact>
+		<statOffsets>
+			
+		</statOffsets>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+		</comps>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>MorrowRim_BonewalkerSupremecy_Intelligence</defName>
+		<issue>MorrowRim_BonewalkerSupremecy</issue>
+		<label>intelligence</label>
+		<description>Bonewalkers are only as strong as the minds that make them.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bonewalkers will no longer become grave revenants, as long as the primary ideology of the colony has this precept.</description>
+		<impact>Low</impact>
+		<statOffsets>
+			
+		</statOffsets>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+		</comps>
+	</PreceptDef>
+
+</Defs>

@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <BodyDef>
+    <defName>MorrowRim_Bonelord</defName>
+    <label>bonelord</label>
+    <corePart>
+      <def>MorrowRim_SkeletalTorso</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>Ribcage</def>
+          <coverage>0.036</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Sternum</def>
+          <coverage>0.015</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Pelvis</def>
+          <coverage>0.025</coverage>
+          <height>Bottom</height>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Spine</def>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+       
+        <li>
+          <def>MorrowRim_SkeletalNeck</def>
+          <coverage>0.075</coverage>
+          <height>Top</height>
+          <groups>
+            <li>Neck</li>
+          </groups>
+          <parts>
+			<!--
+            <li>
+              <def>Head</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+			  -->
+                <li>
+                  <def>Skull</def>
+                  <coverage>0.8</coverage> <!-- from 0.18 -->
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>UpperHead</li>
+                    <li>Eyes</li>
+                    <li>FullHead</li>
+                  </groups>
+                 <parts>
+                    <li>
+                      <def>MorrowRim_EtherealBrain</def>
+                      <coverage>0</coverage>
+                      <groups>
+
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealEye</def>
+                  <customLabel>left ethereal eye</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+  
+                  </groups>
+                  <woundAnchorTag>LeftEye</woundAnchorTag>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealEye</def>
+                  <customLabel>right ethereal eye</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+
+                  </groups>
+                  <woundAnchorTag>RightEye</woundAnchorTag>
+                </li>
+            <!--  </parts>
+            </li>-->
+          </parts>
+        </li>
+		<!-- Upper arms -->
+        <li>
+          <def>MorrowRim_SkeletalShoulder</def>
+          <customLabel>upper left shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>LeftShoulder</woundAnchorTag>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Clavicle</def>
+              <customLabel>upper left clavicle</customLabel>
+              <coverage>0.09</coverage>
+              <height>Top</height>
+              <depth>Inside</depth>
+              <groups>
+                <li>Torso</li>
+              </groups>
+            </li>
+            <li>
+              <def>MorrowRim_SkeletalArm</def>
+              <customLabel>upper left arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>upper left humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>upper left radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_SkeletalHand</def>
+                  <customLabel>upper left hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Hands</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper left pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper left ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper left middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper left index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper left thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MorrowRim_SkeletalShoulder</def>
+          <customLabel>upper right shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>RightShoulder</woundAnchorTag>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Clavicle</def>
+              <customLabel>upper right clavicle</customLabel>
+              <coverage>0.09</coverage>
+              <height>Top</height>
+              <depth>Inside</depth>
+              <groups>
+                <li>Torso</li>
+              </groups>
+            </li>
+            <li>
+              <def>MorrowRim_SkeletalArm</def>
+              <customLabel>upper right arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>upper right humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>upper right radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_SkeletalHand</def>
+                  <customLabel>upper right hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Hands</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper right pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper right ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper right middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper right index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>upper right thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+		<!-- Lower Arms -->
+        <li>
+          <def>MorrowRim_SkeletalShoulder</def>
+          <customLabel>lower left shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>LeftShoulder</woundAnchorTag>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Clavicle</def>
+              <customLabel>lower left clavicle</customLabel>
+              <coverage>0.09</coverage>
+              <height>Top</height>
+              <depth>Inside</depth>
+              <groups>
+                <li>Torso</li>
+              </groups>
+            </li>
+            <li>
+              <def>MorrowRim_SkeletalArm</def>
+              <customLabel>lower left arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>lower left humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>lower left radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_SkeletalHand</def>
+                  <customLabel>lower left hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Hands</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower left pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerLeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower left ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerLeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower left middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerLeftHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower left index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerLeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower left thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerLeftHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MorrowRim_SkeletalShoulder</def>
+          <customLabel>lower right shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>RightShoulder</woundAnchorTag>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Clavicle</def>
+              <customLabel>lower right clavicle</customLabel>
+              <coverage>0.09</coverage>
+              <height>Top</height>
+              <depth>Inside</depth>
+              <groups>
+                <li>Torso</li>
+              </groups>
+            </li>
+            <li>
+              <def>MorrowRim_SkeletalArm</def>
+              <customLabel>lower right arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>lower right humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>lower right radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_SkeletalHand</def>
+                  <customLabel>lower right hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Hands</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower right pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerRightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower right ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerRightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower right middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerRightHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower right index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerRightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>MorrowRim_SkeletalFinger</def>
+                      <customLabel>lower right thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>MorrowRim_LowerRightHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Waist</def>
+          <coverage>0</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Waist</li>
+          </groups>
+        </li>
+		<!-- Legs -->
+		<li>
+          <def>MorrowRim_EtherealLeg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+          <woundAnchorTag>LeftLeg</woundAnchorTag>
+          <parts>
+            <li>
+              <def>Femur</def>
+              <customLabel>left femur</customLabel>
+              <coverage>0</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>Tibia</def>
+              <customLabel>left tibia</customLabel>
+              <coverage>0</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>MorrowRim_EtherealFoot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0</coverage>
+              <groups>
+                <li>Feet</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>left little toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>left fourth toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>left middle toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>left second toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>left big toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MorrowRim_EtherealLeg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+          <woundAnchorTag>RightLeg</woundAnchorTag>
+          <parts>
+            <li>
+              <def>Femur</def>
+              <customLabel>right femur</customLabel>
+              <coverage>0</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>Tibia</def>
+              <customLabel>right tibia</customLabel>
+              <coverage>0</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>MorrowRim_EtherealFoot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0</coverage>
+              <groups>
+                <li>Feet</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>right little toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>right fourth toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>right middle toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>right second toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>MorrowRim_EtherealToe</def>
+                  <customLabel>right big toe</customLabel>
+                  <coverage>0</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+  
+</Defs>

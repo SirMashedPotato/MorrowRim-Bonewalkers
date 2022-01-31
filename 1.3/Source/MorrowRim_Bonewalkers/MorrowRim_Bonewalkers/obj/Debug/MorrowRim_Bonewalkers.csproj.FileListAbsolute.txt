@@ -1,0 +1,4 @@
+J:\Modding\Github\MorrowRim-Bonewalkers\1.3\Assemblies\MorrowRim_Bonewalkers.dll
+J:\Modding\Github\MorrowRim-Bonewalkers\1.3\Source\MorrowRim_Bonewalkers\MorrowRim_Bonewalkers\obj\Debug\MorrowRim_Bonewalkers.csproj.CoreCompileInputs.cache
+J:\Modding\Github\MorrowRim-Bonewalkers\1.3\Source\MorrowRim_Bonewalkers\MorrowRim_Bonewalkers\obj\Debug\MorrowRim_Bonewalkers.dll
+J:\Modding\Github\MorrowRim-Bonewalkers\1.3\Source\MorrowRim_Bonewalkers\MorrowRim_Bonewalkers\obj\Debug\MorrowRim_Bonewalkers.csprojAssemblyReference.cache

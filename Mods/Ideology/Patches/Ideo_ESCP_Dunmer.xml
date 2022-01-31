@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ESCP - Dunmer</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PreceptDef[defName = "ESCP_DunmerIdeoRole_AncestorSpeaker"]/grantedAbilities</xpath>
+					<value>
+						<li>MorrowRim_BonewalkerAbility_Pacify</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+
