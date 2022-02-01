@@ -33,11 +33,11 @@
 	<HediffDef ParentName="MorrowRim_DreadCurseBase">
 		<defName>MorrowRim_DreadCurse_Strength</defName>
 		<description>A dread curse, inflicted by a greater bonewalker. This particular dread curse drains the victims manipulation, leaving them unable to fight back against the guardians of the tomb they intended to rob.\n\nDread curse do not naturally decrease in severity over time, and will instead need to be tended.</description>
-		<label>dread curse</label>
+		<label>dread curse (strength)</label>
 		<stages>
 		  <!-- -->
 		  <li>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -47,7 +47,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.1</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -58,7 +58,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.15</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -68,7 +68,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.2</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -79,7 +79,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.25</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -89,7 +89,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.3</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -100,7 +100,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.35</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -110,7 +110,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.4</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -121,7 +121,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.45</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -131,7 +131,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.5</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -142,7 +142,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.55</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -152,7 +152,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.6</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -163,7 +163,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.65</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -173,7 +173,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.7</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -184,7 +184,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.75</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -194,7 +194,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.8</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -205,7 +205,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.85</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -215,7 +215,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>0.9</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -226,7 +226,7 @@
 		  <!-- -->
 		  <li>
 			<minSeverity>0.95</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -236,7 +236,7 @@
 		  </li>
 		  <li>
 		    <minSeverity>1</minSeverity>
-			<label>strength</label>
+			
 			<capMods>
 			  <li>
 				<capacity>Manipulation</capacity>
@@ -250,115 +250,115 @@
 	<HediffDef ParentName="MorrowRim_DreadCurseBase">
 		<defName>MorrowRim_DreadCurse_Endurance</defName>
 		<description>A dread curse, inflicted by a greater bonewalker. This particular dread curse causes the victim to become increasingly fatigued, leaving them unable to both fight back, and run away.\n\nDread curse do not naturally decrease in severity over time, and will instead need to be tended..</description>
-		<label>dread curse</label>
+		<label>dread curse (endurance)</label>
 		<stages>
 		  <!-- -->
 		  <li>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.05</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.1</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.1</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.15</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.15</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.2</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.2</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.25</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.25</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.3</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.3</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.35</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.35</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.4</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.45</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.45</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.45</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.5</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.5</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.55</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.55</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.6</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.6</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.65</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.65</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.7</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.7</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.75</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.75</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.8</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.8</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.85</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.85</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>0.9</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.9</restFallFactorOffset>
 		  </li>
 		  <!-- -->
 		  <li>
 			<minSeverity>0.95</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>0.95</restFallFactorOffset>
 		  </li>
 		  <li>
 		    <minSeverity>1</minSeverity>
-			<label>endurance</label>
+			
 			<restFallFactorOffset>1</restFallFactorOffset>
 		  </li>
 		</stages>

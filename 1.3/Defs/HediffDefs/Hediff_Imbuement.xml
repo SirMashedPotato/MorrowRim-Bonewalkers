@@ -17,7 +17,7 @@
 	
 	<HediffDef ParentName="MorrowRim_BonewalkerImbuementBase">
 		<defName>MorrowRim_BonewalkerImbuement_BrownRot</defName>
-		<label>imbuement</label>
+		<label>imbuement (brown rot)</label>
 		<description>Brown rot imbuement, causing attacks to inflict brown rot.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_BrownRotDisease</HediffDef>
@@ -30,9 +30,6 @@
             </li>
 		</modExtensions>
 		<stages>
-		  <li>
-			<label>brown rot</label>
-		  </li>
 		</stages>
 	</HediffDef>
 	
@@ -40,8 +37,8 @@
 	
 	<HediffDef ParentName="MorrowRim_BonewalkerImbuementBase">
 		<defName>MorrowRim_BonewalkerImbuement_Chills</defName>
-		<label>imbuement</label>
-		<description>Brown rot imbuement, causing attacks to inflict chills.</description>
+		<label>imbuement (chills)</label>
+		<description>Chills imbuement, causing attacks to inflict chills.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_ChillsDisease</HediffDef>
 		</descriptionHyperlinks>
@@ -53,9 +50,6 @@
             </li>
 		</modExtensions>
 		<stages>
-		  <li>
-			<label>chills</label>
-		  </li>
 		</stages>
 	</HediffDef>
 	
@@ -63,7 +57,7 @@
 	
 	<HediffDef ParentName="MorrowRim_BonewalkerImbuementBase">
 		<defName>MorrowRim_BonewalkerImbuement_DreadCurse_Strength</defName>
-		<label>imbuement</label>
+		<label>imbuement (dread curse - strength)</label>
 		<description>Dread curse imbuement, causing attacks to drain strength.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_DreadCurse_Strength</HediffDef>
@@ -75,15 +69,12 @@
             </li>
 		</modExtensions>
 		<stages>
-		  <li>
-			<label>dread curse - strength</label>
-		  </li>
 		</stages>
 	</HediffDef>
 	
 	<HediffDef ParentName="MorrowRim_BonewalkerImbuementBase">
 		<defName>MorrowRim_BonewalkerImbuement_DreadCurse_Endurance</defName>
-		<label>imbuement</label>
+		<label>imbuement (dread curse - endurance)</label>
 		<description>Dread curse imbuement, causing attacks to increase fatigue.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_DreadCurse_Endurance</HediffDef>
@@ -95,9 +86,6 @@
             </li>
 		</modExtensions>
 		<stages>
-		  <li>
-			<label>dread curse - endurance</label>
-		  </li>
 		</stages>
 	</HediffDef>
 	
@@ -105,7 +93,7 @@
 	
 	<HediffDef ParentName="MorrowRim_BonewalkerImbuementBase">
 		<defName>MorrowRim_BonewalkerImbuement_GraveCurse_Speed</defName>
-		<label>imbuement</label>
+		<label>imbuement (grave curse - speed)</label>
 		<description>Grave curse imbuement, causing attacks to drain moving.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_GraveCurse_Speed</HediffDef>
@@ -117,15 +105,12 @@
             </li>
 		</modExtensions>
 		<stages>
-		  <li>
-			<label>grave curse - speed</label>
-		  </li>
 		</stages>
 	</HediffDef>
 	
 	<HediffDef ParentName="MorrowRim_BonewalkerImbuementBase">
 		<defName>MorrowRim_BonewalkerImbuement_GraveCurse_Strength</defName>
-		<label>imbuement</label>
+		<label>imbuement (grave curse - strength)</label>
 		<description>Grave curse imbuement, causing attacks to drain manipulation.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_GraveCurse_Strength</HediffDef>
@@ -137,15 +122,12 @@
             </li>
 		</modExtensions>
 		<stages>
-		  <li>
-			<label>grave curse - strength</label>
-		  </li>
 		</stages>
 	</HediffDef>
 	
 	<HediffDef ParentName="MorrowRim_BonewalkerImbuementBase">
 		<defName>MorrowRim_BonewalkerImbuement_GraveCurse_Endurance</defName>
-		<label>imbuement</label>
+		<label>imbuement (grave curse - endurance)</label>
 		<description>Grave curse imbuement, causing attacks to increase fatigue.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MorrowRim_GraveCurse_Endurance</HediffDef>
@@ -157,9 +139,6 @@
             </li>
 		</modExtensions>
 		<stages>
-		  <li>
-			<label>grave curse - endurance</label>
-		  </li>
 		</stages>
 	</HediffDef>
 

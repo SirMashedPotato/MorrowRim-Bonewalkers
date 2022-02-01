@@ -4,7 +4,7 @@
 	<HediffDef>
 		<defName>MorrowRim_BonewalkerEnhancement_Strength</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>enhancement</label>
+		<label>enhancement (strength)</label>
 		<description>Increased knowledge concerning the construction of bonewalkers, and bonelords, has resulted in enhanced strength.</description>
 		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -12,7 +12,6 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<label>strength</label>
 				<capMods>
 				  <li>
 					<capacity>Manipulation</capacity>
@@ -26,7 +25,7 @@
 	<HediffDef>
 		<defName>MorrowRim_BonewalkerEnhancement_Durability</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>enhancement</label>
+		<label>enhancement (durability)</label>
 		<description>Increased knowledge concerning the construction of bonewalkers, and bonelords, has resulted in enhanced durability.</description>
 		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -34,7 +33,6 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<label>durability</label>
 				<statOffsets>
 					<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 				</statOffsets>

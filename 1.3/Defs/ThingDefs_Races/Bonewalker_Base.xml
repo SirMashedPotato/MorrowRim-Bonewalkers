@@ -32,7 +32,7 @@
 		  <trainability>Intermediate</trainability>
 		  <showTrainables>false</showTrainables>
 		  <hideTrainingTab>true</hideTrainingTab>
-		  <canBePredatorPrey>true</canBePredatorPrey>
+		  <canBePredatorPrey>false</canBePredatorPrey>
 		  <herdMigrationAllowed>false</herdMigrationAllowed>
 		  <canReleaseToWild>false</canReleaseToWild>
 		  <lifeExpectancy>30</lifeExpectancy>

@@ -80,6 +80,9 @@
 				<member>forger</member>
 			</li>
 		</symbolPacks>
+		<startingResearchProjects>
+			<li>MorrowRim_BonewalkerLesser</li>
+		</startingResearchProjects>
 	</MemeDef>
 
 </Defs>

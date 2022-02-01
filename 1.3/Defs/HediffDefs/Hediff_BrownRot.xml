@@ -4,7 +4,7 @@
 	<HediffDef ParentName="InfectionBase">
 		<defName>MorrowRim_BrownRotDisease</defName>
 		<label>brown rot</label>
-		<description>An infectious disease solely contracted from reanimated dead, such as bonewalkers and bonelords. While initial symptons are relatively mild, victims with advanced infections are rather unpleasant to look at.</description>
+		<description>An infectious disease solely contracted from reanimated dead, such as bonewalkers and bonelords. While initial symptoms are relatively mild, victims with advanced infections are rather unpleasant to look at.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.8, 0.6, 0.4)</defaultLabelColor>
 		<makesSickThought>true</makesSickThought>
