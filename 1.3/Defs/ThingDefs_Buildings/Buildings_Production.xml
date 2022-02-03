@@ -9,7 +9,7 @@
 		 <graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
-		  <drawSize>(6,6)</drawSize>
+		  <drawSize>(4,4)</drawSize>
 		  <drawOffset>0,0,1</drawOffset>
 		  <shadowData>
 			<volume>(2.9, 0.3, 0.5)</volume>
@@ -35,12 +35,12 @@
 		  <Flammability>1.0</Flammability>
 		  <Cleanliness>-5</Cleanliness>
 		</statBases>
-		<size>(5,4)</size>
+		<size>(3,2)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>25</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
 		  <li>ITab_Bills</li>
@@ -52,7 +52,6 @@
 		</comps>
 		<designationHotKey>Misc2</designationHotKey>
 		<placeWorkers>
-		  <li>PlaceWorker_ShowFacilitiesConnections</li>
 		  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 	</ThingDef>
@@ -76,14 +75,10 @@
 			<li>MorrowRim_BonewalkerLesser</li>
 		</researchPrerequisites>
 		<comps>
-		  <li Class="CompProperties_AffectedByFacilities" MayRequire="SirMashedPotato.ESCP.Dunmer">
-			<linkableFacilities>
-			  <li>ESCP_AshBurialPit</li>
-			  <li>ESCP_AshBurialPit_Round</li>
-			  <li>ESCP_AshBurialPit_Small</li>
-			</linkableFacilities>
-		  </li>
+		  
 		</comps>
+		<placeWorkers>
+		</placeWorkers>
 	</ThingDef>
 	
 </Defs>
