@@ -72,7 +72,6 @@
     <Compile Include="DamageWorkers\DamageWorker_BonewalkerBlunt.cs" />
     <Compile Include="DamageWorkers\DamageWorker_BonewalkerScratch.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Utility.cs" />
-    <Compile Include="DeathActionWorker_Bonewalker.cs" />
     <Compile Include="DefModExtensions\ImbuementProperties.cs" />
     <Compile Include="DefModExtensions\PawnProperties.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />

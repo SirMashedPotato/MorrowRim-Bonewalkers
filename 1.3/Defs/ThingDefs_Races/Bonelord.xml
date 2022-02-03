@@ -112,6 +112,7 @@
 			<fleshType>MorrowRim_BonelordFlesh</fleshType>
 			<body>MorrowRim_Bonelord</body>
 			<baseHealthScale>0.8</baseHealthScale>
+			<bloodDef>Ash</bloodDef>
 		</race>
 	</ThingDef>
 	  

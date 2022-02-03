@@ -17,7 +17,7 @@
 		</comps>
 		<race>
 		  <fleshType>MorrowRim_BonewalkerFlesh</fleshType>
-		  <deathActionWorkerClass>MorrowRim_Bonewalkers.DeathActionWorker_Bonewalker</deathActionWorkerClass>
+		  <deathActionWorkerClass>DessicateOnDeath.DeathActionWorker_DessicateOnDeath</deathActionWorkerClass>
 		  <predator>false</predator>
 		  <maxPreyBodySize>1.5</maxPreyBodySize>
 		  <body>Human</body>
