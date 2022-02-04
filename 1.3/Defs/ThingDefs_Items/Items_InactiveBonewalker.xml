@@ -199,7 +199,7 @@
 		<tradeNeverStack>true</tradeNeverStack>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
-		  <MarketValue>650</MarketValue>
+		  <MarketValue>800</MarketValue>
 		  <MaxHitPoints>80</MaxHitPoints>
 		</statBases>
 		<drawGUIOverlay>false</drawGUIOverlay>

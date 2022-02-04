@@ -18,7 +18,7 @@
 			<ArmorRating_Heat>2</ArmorRating_Heat>
 			<ComfyTemperatureMin>-999</ComfyTemperatureMin>
 			<ComfyTemperatureMax>999</ComfyTemperatureMax>
-			<MarketValue>650</MarketValue>
+			<MarketValue>800</MarketValue>	<!-- Inflated due to gold requirement -->
 		</statBases>
 		<modExtensions>
 			<li Class="MorrowRim_Bonewalkers.PawnProperties">

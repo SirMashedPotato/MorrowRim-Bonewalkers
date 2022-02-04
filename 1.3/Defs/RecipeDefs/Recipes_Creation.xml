@@ -164,7 +164,7 @@
 					<li>Gold</li>
 			  </thingDefs>
 			</filter>
-			<count>1</count>	<!-- Actually 10 gold -->
+			<count>2</count>	<!-- Actually 20 gold -->
 		  </li>
 		</ingredients>
 		<fixedIngredientFilter Inherit="False">
