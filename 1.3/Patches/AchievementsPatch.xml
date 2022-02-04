@@ -93,13 +93,18 @@
 						<AchievementsExpanded.AchievementDef>
 							<defName>MorrowRim_AchievementBonewalker_CreateBonelord</defName>
 							<label>Bonelord Created</label>
-							<description>Create, and activate, your first bonelord</description>
+							<description>Create, and activate, your first bonelord or Almsivi bonelord</description>
 							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
 							<tab>MorrowRim_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<requireAll>false</requireAll>
 								<kindDefs>
 									<li>
 										<key>MorrowRim_Bonelord</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_BonelordAlmsivi</key>
 										<value>1</value>
 									</li>
 								</kindDefs>
@@ -108,6 +113,8 @@
 							<texPath>Achievements/MorrowRim_AchievementBonewalker_CreateBonelord</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
+
+						<!-- -->
 						
 						<AchievementsExpanded.AchievementDef>
 							<defName>MorrowRim_AchievementBonewalker_CreateLegendary</defName>

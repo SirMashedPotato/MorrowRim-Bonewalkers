@@ -123,5 +123,61 @@
 		  </specialFiltersToDisallow>
 		</fixedIngredientFilter>
 	</RecipeDef>
+	
+	<!-- Almsivi Bonelord -->
+	
+	<RecipeDef ParentName="MorrowRim_BonewalkerRecipeBase">
+		<defName>MorrowRim_BonelordAlmsiviCreation</defName>
+		<label>create Almsivi bonelord</label>
+		<description>Create an Almsivi bonelord from one humanlike corpse, 75 textiles and 10 Gold.</description>
+		<jobString>Creating Almsivi bonelord.</jobString>
+		<researchPrerequisite>MorrowRim_BonewalkerAdvanced</researchPrerequisite>
+		<products>
+		  <MorrowRim_InactiveBonelordAlmsivi>1</MorrowRim_InactiveBonelordAlmsivi>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		  <Medicine>8</Medicine>
+		  <Intellectual>15</Intellectual>
+		</skillRequirements>
+		<interruptIfIngredientIsRotting>false</interruptIfIngredientIsRotting>
+		<ingredients Inherit="False">
+		  <li>
+			<filter>
+			  <categories>
+				<li>CorpsesHumanlike</li>
+			  </categories>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <categories>
+				<li>Textiles</li>
+			  </categories>
+			</filter>
+			<count>75</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+					<li>Gold</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>	<!-- Actually 10 gold -->
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter Inherit="False">
+		  <categories>
+			<li>CorpsesHumanlike</li>
+			<li>Textiles</li>
+		  </categories>
+		  <thingDefs>
+			<li>Gold</li>
+		  </thingDefs>
+		  <specialFiltersToDisallow>
+		  </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+	</RecipeDef>
   
 </Defs>

@@ -117,6 +117,8 @@ namespace MorrowRim_Bonewalkers
                 }
 			}
 
+			q += Props.additionalQualityLevels;
+
 			if (q >= 0.7f && Props.legendaryQualityHediff != null)
 			{
 				defToAdd = Props.legendaryQualityHediff;

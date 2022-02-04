@@ -181,5 +181,59 @@
 		  </li>
 		</comps>
 	</ThingDef>
+	
+	<!-- Almsivi Bonelord -->
+
+	<ThingDef ParentName="MorrowRim_InactiveBonewalkerBase">
+		<defName>MorrowRim_InactiveBonelordAlmsivi</defName>
+		<label>inactive Almsivi bonelord</label>
+		<description>An inactive bone servant.\n\nAlmsivi has blessed this particular bone servant, as such it will be one quality level higher upon activation.</description>
+		<descriptionHyperlinks><ThingDef>MorrowRim_BonelordAlmsivi</ThingDef></descriptionHyperlinks>
+		<graphicData>
+		  <texPath>Things/Pawn/Creation/MorrowRim_Bonelord/MorrowRim_BonelordAlmsivi_south</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1.5</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+		  <MarketValue>650</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_UseEffect_ActivateBonewalker">
+			<pawnKind>MorrowRim_BonelordAlmsivi</pawnKind>
+			<awakeningHediff>DarkDescent_ServantAwakening</awakeningHediff>
+			<!-- Quality stuff -->
+			<qualityHediff>MorrowRim_BonewalkerQuality</qualityHediff>
+			<legendaryQualityHediff>MorrowRim_BonewalkerQuality_Legendary</legendaryQualityHediff>
+			<qualityBackstoryName>ESCP_Dunmer_BonewalkerKnowledge_Backstory</qualityBackstoryName>
+			<qualityIdeoRoleName>MorrowRim_BonewalkerRole</qualityIdeoRoleName>
+			<qualityIdeoPreceptName>MorrowRim_BonewalkerSupremecy_Quality</qualityIdeoPreceptName>
+			<additionalQualityLevels>0.1</additionalQualityLevels>	<!-- effectively 1 quality level higher -->
+			
+			<additionalHediffs>
+				<li>MorrowRim_BonewalkerPassive</li>
+				<li>MorrowRim_BonewalkerBonelordShield</li>
+			</additionalHediffs>
+			
+			<ideoPreceptNames>
+				<li>MorrowRim_BonewalkerSupremecy_Strength</li>
+				<li>MorrowRim_BonewalkerSupremecy_Durability</li>
+			</ideoPreceptNames>
+			<ideoHediffNames>
+				<li>MorrowRim_BonewalkerEnhancement_Strength</li>
+				<li>MorrowRim_BonewalkerEnhancement_Durability</li>
+			</ideoHediffNames>
+			<conceptDefs>
+				<li>MorrowRim_BonewalkerAndTraining</li>
+				<li>MorrowRim_BonewalkerAndZones</li>
+			</conceptDefs>
+		  </li>
+		</comps>
+	</ThingDef>
 
 </Defs>

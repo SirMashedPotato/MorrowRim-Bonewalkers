@@ -34,5 +34,7 @@ namespace MorrowRim_Bonewalkers
 
         public List<ConceptDef> conceptDefs;
 
+        public float additionalQualityLevels = 0;   //Float so don't set to stuff like 1 or 5, use 0.1 or 0.5
+
     }
 }
