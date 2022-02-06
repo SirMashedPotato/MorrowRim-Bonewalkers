@@ -39,6 +39,9 @@
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<comps>
 		</comps>
+		<requiredMemes>
+		  <li>MorrowRim_BonewalkerSupremacy</li>
+		</requiredMemes>
 	</PreceptDef>
 	
 	<PreceptDef>
@@ -54,6 +57,9 @@
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<comps>
 		</comps>
+		<requiredMemes>
+		  <li>MorrowRim_BonewalkerSupremacy</li>
+		</requiredMemes>
 	</PreceptDef>
 	
 	<PreceptDef>
@@ -69,6 +75,9 @@
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<comps>
 		</comps>
+		<requiredMemes>
+		  <li>MorrowRim_BonewalkerSupremacy</li>
+		</requiredMemes>
 	</PreceptDef>
 
 </Defs>
