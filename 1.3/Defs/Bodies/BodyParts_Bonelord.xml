@@ -2,37 +2,21 @@
 
 <Defs>
 
-	<!-- For bonelord -->
-	
 	<!-- Skeletal parts -->
 	
   <BodyPartDef>
     <defName>MorrowRim_SkeletalTorso</defName>
-    <label>torso</label>
+    <label>skeletal torso</label>
     <hitPoints>40</hitPoints>
     <skinCovered>false</skinCovered>
     <canScarify>false</canScarify>
 	<bleedRate>0</bleedRate>
     <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
-	
-  <BodyPartDef>
-    <defName>MorrowRim_SkeletalNeck</defName>
-    <label>neck</label>
-    <hitPoints>25</hitPoints>
-    <bleedRate>0</bleedRate>
-    <skinCovered>false</skinCovered>
-    <tags>
-      <li>BreathingPathway</li>
-      <li>EatingPathway</li>
-      <li>TalkingPathway</li>
-    </tags>
-    <canSuggestAmputation>false</canSuggestAmputation>
-  </BodyPartDef>
   
   <BodyPartDef>
     <defName>MorrowRim_SkeletalShoulder</defName>
-    <label>shoulder</label>
+    <label>skeletal shoulder</label>
     <hitPoints>30</hitPoints>
 	<bleedRate>0</bleedRate>
     <skinCovered>false</skinCovered>
@@ -43,7 +27,7 @@
   
   <BodyPartDef>
     <defName>MorrowRim_SkeletalArm</defName>
-    <label>arm</label>
+    <label>skeletal arm</label>
     <hitPoints>30</hitPoints>
 	<bleedRate>0</bleedRate>
     <skinCovered>false</skinCovered>
@@ -55,7 +39,7 @@
   
   <BodyPartDef>
     <defName>MorrowRim_SkeletalHand</defName>
-    <label>hand</label>
+    <label>skeletal hand</label>
     <hitPoints>20</hitPoints>
 	<bleedRate>0</bleedRate>
     <skinCovered>false</skinCovered>
@@ -66,7 +50,7 @@
 
   <BodyPartDef>
     <defName>MorrowRim_SkeletalFinger</defName>
-    <label>finger</label>
+    <label>skeletal finger</label>
     <hitPoints>8</hitPoints>
 	<bleedRate>0</bleedRate>
 	<frostbiteVulnerability>1</frostbiteVulnerability>
@@ -78,6 +62,20 @@
   </BodyPartDef>
 	
 	<!-- Ethereal parts -->
+	
+  <BodyPartDef>
+    <defName>MorrowRim_EtherealNeck</defName>
+    <label>ethereal neck</label>
+    <bleedRate>0</bleedRate>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
 
   <BodyPartDef>
     <defName>MorrowRim_EtherealBrain</defName>
@@ -130,7 +128,7 @@
   
   <BodyPartDef>
     <defName>MorrowRim_EtherealToe</defName>
-    <label>toe</label>
+    <label>ethereal toe</label>
     <bleedRate>0</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>

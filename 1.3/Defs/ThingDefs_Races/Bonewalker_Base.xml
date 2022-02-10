@@ -20,7 +20,7 @@
 		  <deathActionWorkerClass>DessicateOnDeath.DeathActionWorker_DessicateOnDeath</deathActionWorkerClass>
 		  <predator>false</predator>
 		  <maxPreyBodySize>1.5</maxPreyBodySize>
-		  <body>Human</body>
+		  <body>MorrowRim_Bonewalker</body>
 		  <baseBodySize>1.0</baseBodySize>
 		  <baseHealthScale>1.5</baseHealthScale>
 		  <foodType>None</foodType>
@@ -59,6 +59,8 @@
 			  <li>(2,0)</li>
 			</points>
 		  </ageGenerationCurve>
+		  <hediffGiverSets Inherit="false">
+		  </hediffGiverSets>
 		</race>
 		<tradeTags>
 			<li>MorrowRim_Bonewalker</li>
