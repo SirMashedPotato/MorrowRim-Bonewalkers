@@ -4,7 +4,7 @@
 	<HediffDef>
 		<defName>MorrowRim_GraveRevenant</defName>
 		<label>grave revenant</label>
-		<description>Bonewalkers, and bonelords, may occasionally succumb to the wraiths of the dead that surround them, causing them to become 'grave revenants'. Bonewalkers are extremely dangerous in this state, not only will they lash out at anyone nearby, but the wraiths will also empower them.\n\nWhile the wraith will usally only leave when it considers the body useless, one with the right skill set may be able to forcefully remove it.</description>
+		<description>Bonewalkers, and bonelords, may occasionally succumb to the wraiths of the dead that surround them, causing them to become 'grave revenants'. Bonewalkers are extremely dangerous in this state, not only will they lash out at anyone nearby, but the wraiths will also empower them.\n\nWhile the wraith will usually only leave when it considers the body useless, one with the right skill set may be able to forcefully remove it.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.4, 0.6, 0.8)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
