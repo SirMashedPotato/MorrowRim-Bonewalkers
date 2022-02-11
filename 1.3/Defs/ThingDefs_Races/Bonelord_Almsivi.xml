@@ -113,6 +113,12 @@
 			<body>MorrowRim_Bonelord</body>
 			<baseHealthScale>1.0</baseHealthScale>
 			<bloodDef>Filth_Ash</bloodDef>
+			<lifeStageAges>
+				<li>
+				  <def>MorrowRim_Bonewalker</def>
+				  <minAge>0</minAge>
+				</li>
+			</lifeStageAges>
 		</race>
 	</ThingDef>
 	  

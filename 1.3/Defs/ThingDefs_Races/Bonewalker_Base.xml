@@ -46,12 +46,6 @@
 		  <!--<thinkTreeMain>MorrowRim_Bonewalker</thinkTreeMain>-->
 		  <thinkTreeConstant>MorrowRim_BonewalkerConstant</thinkTreeConstant>
 
-		  <lifeStageAges>
-			<li>
-			  <def>MorrowRim_Bonewalker</def>
-			  <minAge>0</minAge>
-			</li>
-		  </lifeStageAges>
 		  <ageGenerationCurve>
 			<points>
 			  <li>(0,0)</li>

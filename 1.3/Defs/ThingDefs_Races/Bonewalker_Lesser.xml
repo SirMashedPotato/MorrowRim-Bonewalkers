@@ -89,6 +89,12 @@
 		</comps>
 		<race>
 			<bloodDef>Filth_CorpseBile</bloodDef>
+			<lifeStageAges>
+				<li>
+				  <def>MorrowRim_Bonewalker</def>
+				  <minAge>0</minAge>
+				</li>
+			</lifeStageAges>
 		</race>
 	</ThingDef>
 	  

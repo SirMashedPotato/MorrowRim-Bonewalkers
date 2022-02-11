@@ -92,6 +92,12 @@
 			<baseBodySize>1.2</baseBodySize>
 			<baseHealthScale>2</baseHealthScale>
 			<bloodDef>Filth_CorpseBile</bloodDef>
+			<lifeStageAges>
+				<li>
+				  <def>MorrowRim_Bonewalker</def>
+				  <minAge>0</minAge>
+				</li>
+			</lifeStageAges>
 		</race>
 	</ThingDef>
 	  
