@@ -13,6 +13,9 @@
 			<ComfyTemperatureMax>70</ComfyTemperatureMax>
 			<MarketValue>400</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="PreventTrainingDecay.PawnProperties"/>
+		</modExtensions>
 		<comps>
 		</comps>
 		<race>
