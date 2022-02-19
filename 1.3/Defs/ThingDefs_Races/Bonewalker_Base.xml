@@ -16,6 +16,7 @@
 		<modExtensions>
 			<li Class="PreventTrainingDecay.PawnProperties"/>
 			<li Class="PreventWoundInfection.PawnProperties"/>
+			<li Class="PreventDisease.PawnProperties"/>
 		</modExtensions>
 		<comps>
 		</comps>
