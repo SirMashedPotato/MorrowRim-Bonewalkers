@@ -137,7 +137,7 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<painOffset>-9.99</painOffset>
+				<painFactor>0</painFactor>
 			</li>
 		</stages>
 	</HediffDef>

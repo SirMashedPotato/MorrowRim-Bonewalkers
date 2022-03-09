@@ -70,6 +70,7 @@
 			<li>MorrowRim_BonewalkerCreationLesser</li>
 			<li>MorrowRim_BonewalkerCreationGreater</li>
 			<li>MorrowRim_BonelordCreation</li>
+			<li>MorrowRim_BonelordAlmsiviCreation</li>
 		</recipes>
 		<researchPrerequisites>
 			<li>MorrowRim_BonewalkerLesser</li>
