@@ -13,6 +13,7 @@
 					<xpath>/Defs/PreceptDef[defName = "ESCP_DunmerIdeoRole_AncestorSpeaker"]/grantedAbilities</xpath>
 					<value>
 						<li>MorrowRim_BonewalkerAbility_Pacify</li>
+						<li>MorrowRim_BonewalkerAbility_PacifyMass</li>
 					</value>
 				</li>
 

@@ -43,6 +43,7 @@
 			<li>MorrowRim_BonewalkerAbility_Upgrade</li>
 			<li>MorrowRim_BonewalkerAbility_Create</li>
 			<li>MorrowRim_BonewalkerAbility_Pacify</li>
+			<li>MorrowRim_BonewalkerAbility_PacifyMass</li>
 		</grantedAbilities>
 		<roleDisabledWorkTags>
 		  <li>Mining</li>

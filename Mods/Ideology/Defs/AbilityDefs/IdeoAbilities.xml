@@ -173,4 +173,50 @@
 		</verbProperties>
 	</AbilityDef>
 
+	<AbilityDef ParentName="MorrowRim_BonewalkerAbility_Base">
+		<defName>MorrowRim_BonewalkerAbility_PacifyMass</defName>
+		<label>mass pacify grave revenant</label>
+		<description>Attempt to pacify all nearby grave revenants, forcefully evicting them from the targeted bonewalkers and bonelords within line of sight.\n\nThe chance to succeed is based on the casters psychic sensitivity, with the chance increasing by 5% per each 10% of psychic sensitivity, capped at 90% chance.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		<iconPath>UI/Abilities/MorrowRim_BonewalkerAbility_MassPacify</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/MorrowRim_BonewalkerAbility_MassPacify</warmupMoteSocialSymbol>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>ESCP_DunmerRole</groupDef>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+		  <Ability_EffectRadius>6.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties Inherit="false">
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>8.0</warmupTime>
+		  <range>6.9</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>True</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="MorrowRim_Bonewalkers.CompProperties_BonewalkerPacifyMass">
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		  </li>
+		  <!--
+		  <li Class="ESCP_RaceTools.CompProperties_AbilityEffectCameraShakerOneOff">
+		  </li>
+		  -->
+		</comps>
+	</AbilityDef>
+
 </Defs>

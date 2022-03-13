@@ -1,7 +1,6 @@
 ﻿using RimWorld;
 using Verse;
 
-
 namespace MorrowRim_Bonewalkers
 {
     class CompAbilityEffect_BonewalkerPacify : CompAbilityEffect

@@ -7,6 +7,19 @@
     <MorrowRim_BonewalkerGraveRevenant_LetterLabel>grave revenant ({0})</MorrowRim_BonewalkerGraveRevenant_LetterLabel>
     <MorrowRim_BonewalkerGraveRevenant_LetterText>{0} has become possessed by a wraith, driving it completely mad in the process. It will now seek out living flesh, in an attempt to make itself whole again.\n\nCaution is advised, as the wraith has empowered {0}.</MorrowRim_BonewalkerGraveRevenant_LetterText>
 	
+	<MorrowRim_BonewalkerGraveRevenant_LetterLabel_multi>grave revenants</MorrowRim_BonewalkerGraveRevenant_LetterLabel_multi>
+    <MorrowRim_BonewalkerGraveRevenant_LetterText_multi>Some of your bonewalkers, and bonelords, have become possessed by vengeful wraiths, driving them completely mad in the process. They will now seek out living flesh, in an attempt to make themselves whole again.\n\nCaution is advised, as the wraiths have empowered their new hosts.\n\nThe following {0} have been possessed:\n\n{1}</MorrowRim_BonewalkerGraveRevenant_LetterText_multi>
+	
 	<MorrowRim_Bonewalker_NeedResearch>You must research {0} before you can use this ability.</MorrowRim_Bonewalker_NeedResearch>
+	
+	<MorrowRim_Bonewalker_MassPacifyChance>Chance</MorrowRim_Bonewalker_MassPacifyChance>
+	
+	<!-- Settings -->
+	<MorrowRim_Bonewalker_ModName>MorrowRim - Bonewalkers &amp; Bonelords</MorrowRim_Bonewalker_ModName>
+	<ESCP_Reset>Reset all settings</ESCP_Reset>
+	
+	<MorrowRim_BonewalkerSetting_GraveRevenantEnabled>Enable the grave revenant incident, causing bonewalkers and bonelords to become possessed, and turning permanently manhunter.</MorrowRim_BonewalkerSetting_GraveRevenantEnabled>
+	<MorrowRim_BonewalkerSetting_GraveRevenantVersion>Use the original version of the grave revenant incident, with only a single pawn being affected by it each time.</MorrowRim_BonewalkerSetting_GraveRevenantVersion>
+	<MorrowRim_BonewalkerSetting_GraveRevenantPrecentage>The percentage of bonewalkers and bonelords that become grave revenants.</MorrowRim_BonewalkerSetting_GraveRevenantPrecentage>
 
 </LanguageData>

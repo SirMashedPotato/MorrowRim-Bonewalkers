@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace MorrowRim_Bonewalkers
 {
-    class IncidentWorker_GraveRevenant : IncidentWorker
+    class IncidentWorker_GraveRevenant_old : IncidentWorker
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {

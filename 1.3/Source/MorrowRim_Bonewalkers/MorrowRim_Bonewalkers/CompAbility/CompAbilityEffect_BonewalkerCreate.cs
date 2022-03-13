@@ -31,7 +31,6 @@ namespace MorrowRim_Bonewalkers
             if (c != null)
             {
                 float quality = (user.skills.GetSkill(Props.skill).Level - 5) / 5;
-                Log.Message("quality = " + quality);
 
                 if (this.Props.pawnKind != null)
                 {

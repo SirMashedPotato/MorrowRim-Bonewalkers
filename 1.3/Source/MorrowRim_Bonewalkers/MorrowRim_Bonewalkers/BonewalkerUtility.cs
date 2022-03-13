@@ -67,13 +67,33 @@ namespace MorrowRim_Bonewalkers
             {
                 while (enumerator.MoveNext())
                 {
-                    if (enumerator.Current.def.tradeTags != null && enumerator.Current.def.tradeTags.Contains("MorrowRim_Bonewalker"))
+                    if (PawnIsBonewalker(enumerator.Current))
                     {
                         num++;
                     }
                 }
             }
             return num;
+        }
+
+        public static List<Pawn> BonewalkersInMap(Map map)
+        {
+            if (map == null)
+            {
+                return null;
+            }
+            List<Pawn> servants = new List<Pawn> { };
+            using (List<Pawn>.Enumerator enumerator = map.mapPawns.AllPawnsSpawned.GetEnumerator())
+            {
+                while (enumerator.MoveNext())
+                {
+                    if (PawnIsBonewalker(enumerator.Current))
+                    {
+                        servants.Add(enumerator.Current);
+                    }
+                }
+            }
+            return servants;
         }
     }
 }

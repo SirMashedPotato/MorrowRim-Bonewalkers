@@ -57,9 +57,11 @@
     <Compile Include="CompAbility\CompAbilityEffect_BonewalkerCreate.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_BonewalkerHeal.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_BonewalkerPacify.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerPacifyMass.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_BonewalkerShuffleImbuement.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_BonewalkerUpgrade.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_BonewalkerResurrect.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerPacifyMass.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_BonewalkerCreate.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_BonewalkerHeal.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_BonewalkerPacify.cs" />
@@ -81,8 +83,12 @@
     <Compile Include="HediffComps\HediffComp_DisappearsOnDowned.cs" />
     <Compile Include="Ideo\ThoughtWorker_Precept_BonewalkersInColony.cs" />
     <Compile Include="Ideo\Thought_Situational_Precept_BonewalkersInColony.cs" />
-    <Compile Include="IncidentWorker_GraveRevenant.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_GraveRevenant_old.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_GraveRevenant.cs" />
     <Compile Include="JobGivers\JobGiver_AIGotoNearestHostile_ButSmartly.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility.cs" />
+    <Compile Include="ModSettings\MorrowRim_Bonewalkers_Mod.cs" />
+    <Compile Include="ModSettings\MorrowRim_Bonewalkers_ModSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_Bonewalker.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_BonewalkerCreate.cs" />
