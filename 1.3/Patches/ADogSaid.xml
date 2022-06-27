@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+<!-- Replace "YOURANIMAL1" etc with the defname of your animal (more can be added to the list) put your animal in every operation that is required/wished. 
+(if you dont want an animal to have bionics, then dont add it there, if its supposed to have all the parts then put it in in every part that you want)
+If you dont use any of the operations e.g no animals that use arms, then remove the whole operation! -->
+
+				<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into surgery recipes == peglegs and healing" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or "OldWoundsAnimalBase"]/recipeUsers</xpath>
+					<value>
+						<li>MorrowRim_BonewalkerLesser</li>
+						<li>MorrowRim_BonewalkerGreater</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into surgery recipes == simple prosthetics and organs" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple" or defName = "InstallSpineAnimalSimple" or "InstallJawAnimalSimple" or "InstallBionicEyeAnimal" or "InstallEarAnimalSimple" or "InstallSimpleProstheticLegAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>MorrowRim_BonewalkerLesser</li>
+						<li>MorrowRim_BonewalkerGreater</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into surgery recipes == bionics and powerclaw" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator" or "InstallSpineAnimalBionic" or "InstallJawAnimalBionic" or "InstallEarAnimalBionic" or "InstallPowerClawAnimal" or "InstallBionicLegAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>MorrowRim_BonewalkerLesser</li>
+						<li>MorrowRim_BonewalkerGreater</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into surgery recipes == for prosthetic arms (if the animal has that bodypart only!)" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>MorrowRim_BonewalkerLesser</li>
+						<li>MorrowRim_BonewalkerGreater</li>
+						<li>MorrowRim_Bonelord</li>
+						<li>MorrowRim_BonelordAlmsivi</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into surgery recipes == for bionic arms (if the animal has that bodypart only!)" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicArmAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>MorrowRim_BonewalkerLesser</li>
+						<li>MorrowRim_BonewalkerGreater</li>
+						<li>MorrowRim_Bonelord</li>
+						<li>MorrowRim_BonelordAlmsivi</li>
+					</value>
+				</li>
+				
+				<!-- add body parts -->
+				<!-- Limbs -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal" or defName= "InstallBionicArmAnimal"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_DessicatedArm</li>
+						<li>MorrowRim_SkeletalArm</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name = "LegBaseAnimal"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_DessicatedLeg</li>
+					</value>
+				</li>
+				<!-- Other -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_DessicatedNose</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_DessicatedEye</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallEarAnimalSimple" or defName = "InstallEarAnimalBionic"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_DessicatedEar</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallJawAnimalSimple" or defName = "InstallJawAnimalBionic"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_DessicatedJaw</li>
+					</value>
+				</li>
+				<!-- Organs -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>MorrowRim_DessicatedBrain</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
