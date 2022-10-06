@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedTorso</defName>
+    <label>dessicated torso</label>
+    <hitPoints>40</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+	<bleedRate>0</bleedRate>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedHead</defName>
+    <label>dessicated head</label>
+    <hitPoints>25</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedJaw</defName>
+    <label>dessicated jaw</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <beautyRelated>true</beautyRelated>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+	
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedNeck</defName>
+    <label>dessicated neck</label>
+    <hitPoints>25</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedShoulder</defName>
+    <label>dessicated shoulder</label>
+    <hitPoints>30</hitPoints>
+	<bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedArm</defName>
+    <label>dessicated arm</label>
+    <hitPoints>30</hitPoints>
+	<bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedHand</defName>
+    <label>dessicated hand</label>
+    <hitPoints>20</hitPoints>
+	<bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedFinger</defName>
+    <label>dessicated finger</label>
+    <hitPoints>8</hitPoints>
+	<bleedRate>0</bleedRate>
+	<frostbiteVulnerability>1</frostbiteVulnerability>
+    <pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedBrain</defName>
+    <label>dessicated brain</label>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <delicate>false</delicate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedEye</defName>
+    <label>dessicated eye</label>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <delicate>false</delicate>
+    <skinCovered>false</skinCovered>
+    <canScarify>false</canScarify>
+    <socketed>true</socketed>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedEar</defName>
+    <label>dessicated ear</label>
+    <hitPoints>12</hitPoints>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
+	 <bleedRate>0</bleedRate>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedNose</defName>
+    <label>dessicated nose</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <beautyRelated>true</beautyRelated>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedLeg</defName>
+    <label>dessicated leg</label>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedFoot</defName>
+    <label>dessicated foot</label>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedToe</defName>
+    <label>dessicated toe</label>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MorrowRim_DessicatedTongue</defName>
+    <label>dessicated tongue</label>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <beautyRelated>true</beautyRelated>
+    <forceAlwaysRemovable>true</forceAlwaysRemovable>
+    <removeRecipeLabelOverride>remove</removeRecipeLabelOverride>
+    <tags>
+      <li>Tongue</li>
+    </tags>
+  </BodyPartDef>
+
+</Defs>

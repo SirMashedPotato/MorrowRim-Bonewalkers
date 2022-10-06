@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>MorrowRim_InactiveBonewalkers</defName>
+      <label>inactive bone servants</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>MorrowRim_DeadBonewalkers</defName>
+		<label>bone servant corpses</label>
+		<parent>Corpses</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>MorrowRim_Tome_Bonewalker</defName>
+		<label>Bonewalker creation tomes</label>
+		<parent>Items</parent>
+    </ThingCategoryDef>
+
+</Defs>

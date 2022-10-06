@@ -12,6 +12,9 @@
 	
 	<MorrowRim_Bonewalker_NeedResearch>You must research {0} before you can use this ability.</MorrowRim_Bonewalker_NeedResearch>
 	
+	<MorrowRim_Bonewalker_BookAlreadyRead>{0} already has the knowledge of what this tome contains.</MorrowRim_Bonewalker_BookAlreadyRead>
+	<MorrowRim_Bonewalker_KnowledgeGained>{0} has finished reading {1}, and now has advanced understanding of bonewalker creation. The tome appears to have crumbled into dust.</MorrowRim_Bonewalker_KnowledgeGained>
+	
 	<MorrowRim_Bonewalker_MassPacifyChance>Chance</MorrowRim_Bonewalker_MassPacifyChance>
 	
 	<!-- Settings -->

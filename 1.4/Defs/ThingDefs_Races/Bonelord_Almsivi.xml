@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="MorrowRim_BonewalkerBase">
+		<defName>MorrowRim_BonelordAlmsivi</defName>
+		<label>Almsivi bonelord</label>
+		<uiIconScale>1.35</uiIconScale>
+		<description>A corpse reanimated through totally-not-necromancy, often found guarding Dunmer ancestral tombs. Effectively a skeleton animated by the wraiths of the dead, the creation of bonelords is a closely held secret by the Dunmer, likely due to it's 100% necromantic nature. This particular bonelord is adorned in Almsivi garments, as such it is slightly sturdier than a reqular bonelord.\n\nWhile their physical form is somewhat fragile, bonelords project an ethereal barrier around them, deflecting almost all blows. Weapons made of silver are some of the few weapons capable of piercing the barrier.\n\nLike all undead creations, bonelords are completely immune to pain, a side effect of the reanimation process, which has also severly damaged their cognitive functions.\n\nBonelords can curse their victims, draining the victims speed, ensuring they can't run away.\n\nBonelords are willing to chase agressors until their legs fail them. Because of this, there are often special wards around the entrances of Dunmer tombs, preventing the bonelords from leaving. Similar results can be achieved using zones.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_BonewalkerBonelordShield</HediffDef>
+			<HediffDef>MorrowRim_BonewalkerImbuement_BrownRot</HediffDef>
+			<HediffDef>MorrowRim_BonewalkerImbuement_Chills</HediffDef>
+			<HediffDef>MorrowRim_BonewalkerImbuement_GraveCurse_Speed</HediffDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<PsychicSensitivity>4</PsychicSensitivity>
+			<Flammability>0</Flammability>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+			<ComfyTemperatureMin>-999</ComfyTemperatureMin>
+			<ComfyTemperatureMax>999</ComfyTemperatureMax>
+			<MarketValue>800</MarketValue>
+			<!-- Inflated due to gold requirement -->
+		</statBases>
+		<modExtensions>
+			<li Class="MorrowRim_Bonewalkers.PawnProperties">
+				<imbuements>
+					<li>MorrowRim_BonewalkerImbuement_BrownRot</li>
+					<li>MorrowRim_BonewalkerImbuement_Chills</li>
+					<li>MorrowRim_BonewalkerImbuement_GraveCurse_Speed</li>
+				</imbuements>
+			</li>
+		</modExtensions>
+		<tools>
+			<!-- hands -->
+			<li>
+				<label>upper left hand</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBlunt</li>
+					<li>MorrowRim_BonewalkerScratch</li>
+				</capacities>
+				<power>12.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>upper right hand</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBlunt</li>
+					<li>MorrowRim_BonewalkerScratch</li>
+				</capacities>
+				<power>12.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>lower left hand</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBlunt</li>
+					<li>MorrowRim_BonewalkerScratch</li>
+				</capacities>
+				<power>12.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_LowerLeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>lower right hand</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBlunt</li>
+					<li>MorrowRim_BonewalkerScratch</li>
+				</capacities>
+				<power>12.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>MorrowRim_LowerRightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"/>
+		</comps>
+		<race>
+			<fleshType>MorrowRim_BonelordFlesh</fleshType>
+			<body>MorrowRim_Bonelord</body>
+			<baseHealthScale>1.0</baseHealthScale>
+			<bloodDef>Filth_Ash</bloodDef>
+			<lifeStageAges>
+				<li>
+					<def>MorrowRim_Bonewalker</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="MorrowRim_BonelordAlmsivi" ParentName="MorrowRim_BonewalkerKindBase">
+		<defName>MorrowRim_BonelordAlmsivi</defName>
+		<label>Almsivi bonelord</label>
+		<race>MorrowRim_BonelordAlmsivi</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Creation/MorrowRim_Bonelord/MorrowRim_BonelordAlmsivi</texPath>
+					<drawSize>2.3</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.8, 0.4)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Creation/MorrowRim_Bonelord/MorrowRim_DessicatedBonelordAlmsivi</texPath>
+					<drawSize>2.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

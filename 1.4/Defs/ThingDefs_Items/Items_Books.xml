@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[Base]==========-->
+	<ThingDef ParentName="ResourceBase" Name="MorrowRim_BonewalkerBookBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>MorrowRim_Tome_Bonewalker</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>MorrowRim_Tome_Bonewalker</li>
+		</tradeTags>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Mass>0.5</Mass>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>All</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Read tome</useLabel>
+			</li>
+			<!--
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+			-->
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_BonewalkerKnowledgeBook_VolOne]==========-->
+	<ThingDef ParentName="MorrowRim_BonewalkerBookBase">
+		<defName>MorrowRim_BonewalkerKnowledgeBook_VolOne</defName>
+		<label>Bonewalker Creation Volume I</label>
+		<description>A tome detailing the procedure of creating bonewalkers. This particular tome goes into great depth on the art of properly preparing a corpse.\n\nThis tome appears to be exceptionally old, and will likely crumble into dust once someone has finished reading it.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_BonewalkerKnowledgeBook_VolOne</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/MorrowRim_BonewalkerKnowledgeBook_VolOne</texPath>
+		</graphicData>
+		<comps>
+			<li Class="MorrowRim_Bonewalkers.CompProperties_UseEffectKnowledgeBook">
+				<hediffDef>MorrowRim_BonewalkerKnowledgeBook_VolOne</hediffDef>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ==========[MorrowRim_BonewalkerKnowledgeBook_VolTwo]==========-->
+	<ThingDef ParentName="MorrowRim_BonewalkerBookBase">
+		<defName>MorrowRim_BonewalkerKnowledgeBook_VolTwo</defName>
+		<label>Bonewalker Creation Volume II</label>
+		<description>A tome detailing the procedure of creating bonewalkers. This particular tome goes into great depth on the art of safely attracting lost souls.\n\nThis tome appears to be exceptionally old, and will likely crumble into dust once someone has finished reading it.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_BonewalkerKnowledgeBook_VolTwo</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/MorrowRim_BonewalkerKnowledgeBook_VolTwo</texPath>
+		</graphicData>
+		<comps>
+			<li Class="MorrowRim_Bonewalkers.CompProperties_UseEffectKnowledgeBook">
+				<hediffDef>MorrowRim_BonewalkerKnowledgeBook_VolTwo</hediffDef>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

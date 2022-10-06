@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>MorrowRim_AchievementsTab</defName>
+							<label>MorrowRim</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<!-- Achievements -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_BonewalkerResearch</defName>
+							<label>Totally Not Necromancy</label>
+							<description>Finish researching the first volume of bonewalker creation</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ResearchTracker">
+								<def>MorrowRim_BonewalkerLesser</def>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_BonewalkerResearch</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_BonelordResearch</defName>
+							<label>Yea, This Might Actually be Necromancy</label>
+							<description>Finish researching the third volume of bonewalker creation</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ResearchTracker">
+								<def>MorrowRim_BonewalkerAdvanced</def>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_BonelordResearch</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_CreateLesserBonewalker</defName>
+							<label>Lesser Bonewalker Created</label>
+							<description>Create, and activate, your first lesser bonewalker</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>MorrowRim_BonewalkerLesser</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_CreateLesserBonewalker</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_CreateGreaterBonewalker</defName>
+							<label>Greater Bonewalker Created</label>
+							<description>Create, and activate, your first greater bonewalker</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>MorrowRim_BonewalkerGreater</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_CreateGreaterBonewalker</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_CreateBonelord</defName>
+							<label>Bonelord Created</label>
+							<description>Create, and activate, your first bonelord or Almsivi bonelord</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<requireAll>false</requireAll>
+								<kindDefs>
+									<li>
+										<key>MorrowRim_Bonelord</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_BonelordAlmsivi</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_CreateBonelord</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_CreateLegendary</defName>
+							<label>Legendary Bone-Beast</label>
+							<description>Create, or upgrade, your first legendary quality bonewalker or bonelord</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>MorrowRim_BonewalkerQuality_Legendary</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_CreateLegendary</texPath>
+							<points>20</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_Revenant</defName>
+							<label>The Vengeful Undead</label>
+							<description>Have a bonewalker, or bonelord, become a grave revenant for the first time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>MorrowRim_GraveRevenant</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_Revenant</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_GraveCurses</defName>
+							<label>A Grave Situation</label>
+							<description>Have a single pawn become affected by all three grave curses at the same time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.MultiHediffTracker">
+								<defs>
+									<li>
+										<key>MorrowRim_GraveCurse_Speed</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_GraveCurse_Strength</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_GraveCurse_Endurance</key>
+										<value>1</value>
+									</li>
+
+								</defs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_GraveCurses</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_DreadCurses</defName>
+							<label>A Dreadful Situation</label>
+							<description>Have a single pawn become affected by both dread curses at the same time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.MultiHediffTracker">
+								<defs>
+									<li>
+										<key>MorrowRim_DreadCurse_Strength</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_DreadCurse_Endurance</key>
+										<value>1</value>
+									</li>
+
+								</defs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_DreadCurses</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBonewalker_Diseases</defName>
+							<label>Just an All Around Bad Situation</label>
+							<description>Have a single pawn become affected by both brown rot and chills at the same time</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.MultiHediffTracker">
+								<defs>
+									<li>
+										<key>MorrowRim_BrownRotDisease</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>MorrowRim_ChillsDisease</key>
+										<value>1</value>
+									</li>
+
+								</defs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBonewalker_Diseases</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

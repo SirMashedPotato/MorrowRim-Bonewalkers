@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4CB514B-7D71-414F-ABB0-87BD050A0C04}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MorrowRim_Bonewalkers</RootNamespace>
+    <AssemblyName>MorrowRim_Bonewalkers</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BonewalkerUtility.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerCreate.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerHeal.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerPacify.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerPacifyMass.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerShuffleImbuement.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerUpgrade.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_BonewalkerResurrect.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerPacifyMass.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerCreate.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerHeal.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerPacify.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerResurrect.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerShuffleImbuement.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_BonewalkerUpgrade.cs" />
+    <Compile Include="CompUse\CompUseEffect_KnowledgeBook.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectKnowledgeBook.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffect_ActivateBonewalker.cs" />
+    <Compile Include="CompUse\CompUseEffect_ActivateBonewalker.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_BonewalkerBite.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_BonewalkerBlunt.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_BonewalkerScratch.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_Utility.cs" />
+    <Compile Include="DeathActionWorker\DeathActionWorker_DessicateOnDeath.cs" />
+    <Compile Include="DefModExtensions\ImbuementProperties.cs" />
+    <Compile Include="DefModExtensions\PawnProperties.cs" />
+    <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="Harmony\Harmony.cs" />
+    <Compile Include="HediffComps\HediffComp_BonelordShield.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_BonelordShield.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_DisappearsOnDowned.cs" />
+    <Compile Include="HediffComps\HediffComp_DisappearsOnDowned.cs" />
+    <Compile Include="Ideo\ThoughtWorker_Precept_BonewalkersInColony.cs" />
+    <Compile Include="Ideo\Thought_Situational_Precept_BonewalkersInColony.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_GraveRevenant_old.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_GraveRevenant.cs" />
+    <Compile Include="JobGivers\JobGiver_AIGotoNearestHostile_ButSmartly.cs" />
+    <Compile Include="ModSettings\ModSettingsUtility.cs" />
+    <Compile Include="ModSettings\MorrowRim_Bonewalkers_Mod.cs" />
+    <Compile Include="ModSettings\MorrowRim_Bonewalkers_ModSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_Bonewalker.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_BonewalkerCreate.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_BonewalkerPacify.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_BonewalkerResurrect.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_BonewalkerShuffleImbuement.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_BonewalkerUpgrade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

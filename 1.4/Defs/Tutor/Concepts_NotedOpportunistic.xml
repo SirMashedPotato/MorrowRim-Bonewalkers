@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ConceptDef ParentName="NotedOpportunisticBase">
+    <defName>MorrowRim_BonewalkerAndTraining</defName>
+    <label>Bonewalkers and training</label>
+    <helpText>While bonewalkers do not need to be trained, their trainables orders are disabled by default, and will need to be manually enabled.</helpText>
+  </ConceptDef>
+  
+  <ConceptDef ParentName="NotedOpportunisticBase">
+    <defName>MorrowRim_BonewalkerAndZones</defName>
+    <label>Bonewalkers and zones</label>
+    <helpText>Bonewalkers, and bonelords, are highly aggressive. If given the chance, they will gladly seek out any hostile pawns, and chase them to the edges of the map. Assigning them to zones can help to avoid this.</helpText>
+  </ConceptDef>
+
+</Defs>

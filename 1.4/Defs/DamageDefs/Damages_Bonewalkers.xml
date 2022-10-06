@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Bonewalker damages -->
+	
+	<DamageDef ParentName="Bite">
+		<defName>MorrowRim_BonewalkerBite</defName>
+		<label>bonewalker bite</label>
+		<workerClass>MorrowRim_Bonewalkers.DamageWorker_BonewalkerBite</workerClass>
+	</DamageDef>
+	
+	<DamageDef ParentName="Scratch">
+		<defName>MorrowRim_BonewalkerScratch</defName>
+		<label>bonewalker scratch</label>
+		<workerClass>MorrowRim_Bonewalkers.DamageWorker_BonewalkerScratch</workerClass>
+	</DamageDef>
+	
+	<DamageDef ParentName="BluntBase">
+		<defName>MorrowRim_BonewalkerBlunt</defName>
+		<label>bonewalker blunt</label>
+		<workerClass>MorrowRim_Bonewalkers.DamageWorker_BonewalkerBlunt</workerClass>
+	</DamageDef>
+	
+</Defs>

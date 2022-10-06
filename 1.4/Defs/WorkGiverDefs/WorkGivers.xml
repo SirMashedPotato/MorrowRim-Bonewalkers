@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>MorrowRim_WorkBonewalkerForge</defName>
+		<label>work bonewalker forge</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<workTags>
+		  <li>Intellectual</li>
+		</workTags>
+		<priorityInType>115</priorityInType>
+		<fixedBillGiverDefs>
+		  <li>MorrowRim_BonewalkerForge</li>
+		</fixedBillGiverDefs>
+		<verb>working bonewalker forge</verb>
+		<gerund>crafting at bonewalker forge</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+</Defs>

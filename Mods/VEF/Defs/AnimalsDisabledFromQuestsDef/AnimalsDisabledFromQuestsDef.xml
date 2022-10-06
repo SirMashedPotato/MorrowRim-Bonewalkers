@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>MorrowRim_Bonewalkers_DisabledQuestAnimals</defName>
+		<disabledFromQuestsPawns>
+			<li>MorrowRim_BonewalkerLesser</li>
+			<li>MorrowRim_BonewalkerGreater</li>
+			<li>MorrowRim_Bonelord</li>
+			<li>MorrowRim_BonelordAlmsivi</li>
+		</disabledFromQuestsPawns>
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+</Defs>

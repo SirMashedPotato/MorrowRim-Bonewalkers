@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- base -->
+	<ThingDef ParentName="ResourceBase" Name="MorrowRim_InactiveBonewalkerBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Medieval</techLevel>
+		<description>An inactive bone servant.</description>
+		<thingCategories>
+			<li>MorrowRim_InactiveBonewalkers</li>
+		</thingCategories>
+		<statBases>
+			<Mass>10</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>MorrowRim_ActivateServant</useJob>
+				<useLabel>Activate bone servant</useLabel>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Lesser bonewalker -->
+	<ThingDef ParentName="MorrowRim_InactiveBonewalkerBase">
+		<defName>MorrowRim_InactiveBonewalkerLesser</defName>
+		<label>inactive lesser bonewalker</label>
+		<descriptionHyperlinks>
+			<ThingDef>MorrowRim_BonewalkerLesser</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Pawn/Creation/MorrowRim_Bonewalker/MorrowRim_LesserBonewalker_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+			<li Class="MorrowRim_Bonewalkers.CompProperties_UseEffect_ActivateBonewalker">
+				<pawnKind>MorrowRim_BonewalkerLesser</pawnKind>
+				<awakeningHediff>MorrowRim_BonewalkerAwakening</awakeningHediff>
+				<!-- Quality stuff -->
+				<qualityHediff>MorrowRim_BonewalkerQuality</qualityHediff>
+				<legendaryQualityHediff>MorrowRim_BonewalkerQuality_Legendary</legendaryQualityHediff>
+				<qualityHediffDefs>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolOne</li>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolTwo</li>
+				</qualityHediffDefs>
+				<qualityIdeoRoleName>MorrowRim_BonewalkerRole</qualityIdeoRoleName>
+				<qualityIdeoPreceptName>MorrowRim_BonewalkerSupremecy_Quality</qualityIdeoPreceptName>
+				<additionalHediffs>
+					<li>MorrowRim_BonewalkerPassive</li>
+				</additionalHediffs>
+				<ideoPreceptNames>
+					<li>MorrowRim_BonewalkerSupremecy_Strength</li>
+					<li>MorrowRim_BonewalkerSupremecy_Durability</li>
+				</ideoPreceptNames>
+				<ideoHediffNames>
+					<li>MorrowRim_BonewalkerEnhancement_Strength</li>
+					<li>MorrowRim_BonewalkerEnhancement_Durability</li>
+				</ideoHediffNames>
+				<conceptDefs>
+					<li>MorrowRim_BonewalkerAndTraining</li>
+					<li>MorrowRim_BonewalkerAndZones</li>
+				</conceptDefs>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Greater bonewalker -->
+	<ThingDef ParentName="MorrowRim_InactiveBonewalkerBase">
+		<defName>MorrowRim_InactiveBonewalkerGreater</defName>
+		<label>inactive greater bonewalker</label>
+		<descriptionHyperlinks>
+			<ThingDef>MorrowRim_BonewalkerGreater</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Pawn/Creation/MorrowRim_Bonewalker/MorrowRim_GreaterBonewalker_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+			<li Class="MorrowRim_Bonewalkers.CompProperties_UseEffect_ActivateBonewalker">
+				<pawnKind>MorrowRim_BonewalkerGreater</pawnKind>
+				<awakeningHediff>MorrowRim_BonewalkerAwakening</awakeningHediff>
+				<!-- Quality stuff -->
+				<qualityHediff>MorrowRim_BonewalkerQuality</qualityHediff>
+				<legendaryQualityHediff>MorrowRim_BonewalkerQuality_Legendary</legendaryQualityHediff>
+				<qualityHediffDefs>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolOne</li>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolTwo</li>
+				</qualityHediffDefs>
+				<qualityIdeoRoleName>MorrowRim_BonewalkerRole</qualityIdeoRoleName>
+				<qualityIdeoPreceptName>MorrowRim_BonewalkerSupremecy_Quality</qualityIdeoPreceptName>
+				<additionalHediffs>
+					<li>MorrowRim_BonewalkerPassive</li>
+				</additionalHediffs>
+				<ideoPreceptNames>
+					<li>MorrowRim_BonewalkerSupremecy_Strength</li>
+					<li>MorrowRim_BonewalkerSupremecy_Durability</li>
+				</ideoPreceptNames>
+				<ideoHediffNames>
+					<li>MorrowRim_BonewalkerEnhancement_Strength</li>
+					<li>MorrowRim_BonewalkerEnhancement_Durability</li>
+				</ideoHediffNames>
+				<conceptDefs>
+					<li>MorrowRim_BonewalkerAndTraining</li>
+					<li>MorrowRim_BonewalkerAndZones</li>
+				</conceptDefs>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Bonelord -->
+	<ThingDef ParentName="MorrowRim_InactiveBonewalkerBase">
+		<defName>MorrowRim_InactiveBonelord</defName>
+		<label>inactive bonelord</label>
+		<descriptionHyperlinks>
+			<ThingDef>MorrowRim_Bonelord</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Pawn/Creation/MorrowRim_Bonelord/MorrowRim_Bonelord_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+			<li Class="MorrowRim_Bonewalkers.CompProperties_UseEffect_ActivateBonewalker">
+				<pawnKind>MorrowRim_Bonelord</pawnKind>
+				<awakeningHediff>MorrowRim_BonewalkerAwakening</awakeningHediff>
+				<!-- Quality stuff -->
+				<qualityHediff>MorrowRim_BonewalkerQuality</qualityHediff>
+				<legendaryQualityHediff>MorrowRim_BonewalkerQuality_Legendary</legendaryQualityHediff>
+				<qualityHediffDefs>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolOne</li>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolTwo</li>
+				</qualityHediffDefs>
+				<qualityIdeoRoleName>MorrowRim_BonewalkerRole</qualityIdeoRoleName>
+				<qualityIdeoPreceptName>MorrowRim_BonewalkerSupremecy_Quality</qualityIdeoPreceptName>
+				<additionalHediffs>
+					<li>MorrowRim_BonewalkerPassive</li>
+					<li>MorrowRim_BonewalkerBonelordShield</li>
+				</additionalHediffs>
+				<ideoPreceptNames>
+					<li>MorrowRim_BonewalkerSupremecy_Strength</li>
+					<li>MorrowRim_BonewalkerSupremecy_Durability</li>
+				</ideoPreceptNames>
+				<ideoHediffNames>
+					<li>MorrowRim_BonewalkerEnhancement_Strength</li>
+					<li>MorrowRim_BonewalkerEnhancement_Durability</li>
+				</ideoHediffNames>
+				<conceptDefs>
+					<li>MorrowRim_BonewalkerAndTraining</li>
+					<li>MorrowRim_BonewalkerAndZones</li>
+				</conceptDefs>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Almsivi Bonelord -->
+	<ThingDef ParentName="MorrowRim_InactiveBonewalkerBase">
+		<defName>MorrowRim_InactiveBonelordAlmsivi</defName>
+		<label>inactive Almsivi bonelord</label>
+		<description>An inactive bone servant.\n\nAlmsivi has blessed this particular bone servant, as such it will be one quality level higher upon activation.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MorrowRim_BonelordAlmsivi</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Pawn/Creation/MorrowRim_Bonelord/MorrowRim_BonelordAlmsivi_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+			<li Class="MorrowRim_Bonewalkers.CompProperties_UseEffect_ActivateBonewalker">
+				<pawnKind>MorrowRim_BonelordAlmsivi</pawnKind>
+				<awakeningHediff>MorrowRim_BonewalkerAwakening</awakeningHediff>
+				<!-- Quality stuff -->
+				<qualityHediff>MorrowRim_BonewalkerQuality</qualityHediff>
+				<legendaryQualityHediff>MorrowRim_BonewalkerQuality_Legendary</legendaryQualityHediff>
+				<qualityHediffDefs>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolOne</li>
+					<li>MorrowRim_BonewalkerKnowledgeBook_VolTwo</li>
+				</qualityHediffDefs>
+				<qualityIdeoRoleName>MorrowRim_BonewalkerRole</qualityIdeoRoleName>
+				<qualityIdeoPreceptName>MorrowRim_BonewalkerSupremecy_Quality</qualityIdeoPreceptName>
+				<additionalQualityLevels>0.1</additionalQualityLevels>
+				<!-- effectively 1 quality level higher -->
+				<additionalHediffs>
+					<li>MorrowRim_BonewalkerPassive</li>
+					<li>MorrowRim_BonewalkerBonelordShield</li>
+				</additionalHediffs>
+				<ideoPreceptNames>
+					<li>MorrowRim_BonewalkerSupremecy_Strength</li>
+					<li>MorrowRim_BonewalkerSupremecy_Durability</li>
+				</ideoPreceptNames>
+				<ideoHediffNames>
+					<li>MorrowRim_BonewalkerEnhancement_Strength</li>
+					<li>MorrowRim_BonewalkerEnhancement_Durability</li>
+				</ideoHediffNames>
+				<conceptDefs>
+					<li>MorrowRim_BonewalkerAndTraining</li>
+					<li>MorrowRim_BonewalkerAndZones</li>
+				</conceptDefs>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

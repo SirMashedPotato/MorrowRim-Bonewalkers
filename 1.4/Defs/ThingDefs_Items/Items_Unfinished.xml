@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>MorrowRim_UnfinishedBonewalker</defName>
+		<label>unfinished bone servant</label>
+		<description>An unfinished bone servant.</description>
+		<statBases>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Item/Unfinished/MorrowRim_UnfinishedBoneServant</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1.5</drawSize>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+</Defs>

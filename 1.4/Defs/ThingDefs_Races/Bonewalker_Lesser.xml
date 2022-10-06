@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="MorrowRim_BonewalkerBase">
+		<defName>MorrowRim_BonewalkerLesser</defName>
+		<label>lesser bonewalker</label>
+		<uiIconScale>1.35</uiIconScale>
+		<description>A corpse reanimated through totally-not-necromancy, often found guarding Dunmer ancestral tombs. Unlike heretical necromancy, being turned into a bonewalker after death is often considered quite the honor by Dunmer.\n\nLike all undead creations, lesser bonewalkers are completely immune to pain, a side effect of the reanimation process, which has also severly damaged their cognitive functions.\n\nBonewalkers often carry the brown rot disease, infecting any the creature attacks. Some specimens are instead capable of cursing their victims, draining the victims strength or endurance.\n\nBonewalkers are willing to chase agressors until their legs fail them. Because of this, there are often special wards around the entrances of Dunmer tombs, preventing the bonewalkers from leaving. Similar results can be achieved using zones.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_BonewalkerImbuement_BrownRot</HediffDef>
+			<HediffDef>MorrowRim_BonewalkerImbuement_Chills</HediffDef>
+			<HediffDef>MorrowRim_BonewalkerImbuement_GraveCurse_Endurance</HediffDef>
+			<HediffDef>MorrowRim_BonewalkerImbuement_GraveCurse_Strength</HediffDef>
+		</descriptionHyperlinks>
+		<statBases>
+		</statBases>
+		<modExtensions>
+			<li Class="MorrowRim_Bonewalkers.PawnProperties">
+				<imbuements>
+					<li>MorrowRim_BonewalkerImbuement_BrownRot</li>
+					<li>MorrowRim_BonewalkerImbuement_Chills</li>
+					<li>MorrowRim_BonewalkerImbuement_GraveCurse_Endurance</li>
+					<li>MorrowRim_BonewalkerImbuement_GraveCurse_Strength</li>
+				</imbuements>
+			</li>
+		</modExtensions>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBlunt</li>
+					<li>MorrowRim_BonewalkerScratch</li>
+				</capacities>
+				<power>12.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBlunt</li>
+					<li>MorrowRim_BonewalkerScratch</li>
+				</capacities>
+				<power>12.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>MorrowRim_BonewalkerBlunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+		</comps>
+		<race>
+			<bloodDef>Filth_CorpseBile</bloodDef>
+			<lifeStageAges>
+				<li>
+					<def>MorrowRim_Bonewalker</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef Name="MorrowRim_BonewalkerLesser" ParentName="MorrowRim_BonewalkerKindBase">
+		<defName>MorrowRim_BonewalkerLesser</defName>
+		<label>lesser bonewalker</label>
+		<race>MorrowRim_BonewalkerLesser</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Creation/MorrowRim_Bonewalker/MorrowRim_LesserBonewalker</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.8, 0.4)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Creation/MorrowRim_Bonewalker/MorrowRim_DessicatedBonewalker</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

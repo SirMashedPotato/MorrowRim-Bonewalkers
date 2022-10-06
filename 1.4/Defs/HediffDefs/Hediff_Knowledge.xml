@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef Name="MorrowRim_BonewalkerKnowledgeBook_Base" Abstract="True">
+		<hediffClass>Hediff</hediffClass>
+		<description>Intense study of ancient tomes has granted increased knowledge over the process of creating bonewalkers. Any bonewalkers, and bonelords, this person activates will be 1 quality level higher than normal.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MarketValue>+500</MarketValue>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="MorrowRim_BonewalkerKnowledgeBook_Base">
+		<defName>MorrowRim_BonewalkerKnowledgeBook_VolOne</defName>
+		<label>bonewalker knowledge (Vol. I)</label>
+	</HediffDef>
+	<HediffDef ParentName="MorrowRim_BonewalkerKnowledgeBook_Base">
+		<defName>MorrowRim_BonewalkerKnowledgeBook_VolTwo</defName>
+		<label>bonewalker knowledge (Vol. II)</label>
+	</HediffDef>
+</Defs>
