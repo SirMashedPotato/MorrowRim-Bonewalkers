@@ -3,7 +3,8 @@
 	<ThingDef ParentName="AnimalThingBase" Name="MorrowRim_BonewalkerBase" Abstract="True">
 		<statBases>
 			<PsychicSensitivity>2</PsychicSensitivity>
-			<ToxicEnvironmentResistance>0</ToxicEnvironmentResistance>
+			<ToxicResistance>1</ToxicResistance>
+			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 			<MeatAmount>0</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
 			<MoveSpeed>4.0</MoveSpeed>
