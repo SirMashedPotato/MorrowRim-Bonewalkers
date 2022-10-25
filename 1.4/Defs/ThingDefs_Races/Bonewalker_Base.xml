@@ -10,6 +10,7 @@
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<ComfyTemperatureMax>70</ComfyTemperatureMax>
+			<FilthRate>0</FilthRate>
 			<MarketValue>400</MarketValue>
 		</statBases>
 		<modExtensions>

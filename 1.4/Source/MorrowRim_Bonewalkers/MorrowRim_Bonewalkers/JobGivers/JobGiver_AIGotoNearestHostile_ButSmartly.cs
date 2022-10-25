@@ -10,7 +10,7 @@ namespace MorrowRim_Bonewalkers
 	{
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-			float num = 600f;
+			float num = 800f;
 			Thing thing = null;
 			List<IAttackTarget> potentialTargetsFor = pawn.Map.attackTargetsCache.GetPotentialTargetsFor(pawn);
 			for (int i = 0; i < potentialTargetsFor.Count; i++)

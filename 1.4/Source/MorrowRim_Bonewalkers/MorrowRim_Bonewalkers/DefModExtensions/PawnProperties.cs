@@ -9,6 +9,7 @@ namespace MorrowRim_Bonewalkers
         public bool preventDisease = true;
         public bool preventTrainingDecay = true;
         public bool preventWoundInfection = true;
+        //public bool useBloodAsFilth = true;
 
         public static PawnProperties Get(Def def)
         {
