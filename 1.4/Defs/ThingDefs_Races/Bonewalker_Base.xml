@@ -17,6 +17,7 @@
 			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="SirMashedPotato.MorrowRim">
 				<ashResistant>Resistant</ashResistant>
 			</li>
+			<li Class="GiddyUp.NotMountable" MayRequire="owlchemist.giddyup"/>
 		</modExtensions>
 		<comps>
 			<li Class="GiddyUpCore.CompProperties_Mount" MayRequire="roolo.giddyupcore">
