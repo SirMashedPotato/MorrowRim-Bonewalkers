@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>MorrowRim_BonewalkerNamerRole</defName>
+    <include><li>NamerRoleSpecialistUtility</li></include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName->forger</li>
+        <li>r_roleName->crafter</li>
+        <li>r_roleName->maker</li>
+        <li>r_roleName->melder</li>
+        <li>r_roleName->manipulator</li>
+        <li>firstPart->flesh</li>
+        <li>firstPart->bone</li>
+        <li>firstPart->muscle</li>
+        <li>firstPart->life</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

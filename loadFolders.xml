@@ -3,14 +3,14 @@
 	<v1.3>
 		<li>Common</li>
 		<li>1.3</li>
-		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ideology</li>
-		<li IfModActive="SirMashedPotato.ESCP.Dunmer">Mods/ESCP_Dunmer</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.3/Mods/Ideology</li>
+		<li IfModActive="SirMashedPotato.ESCP.Dunmer">1.3/Mods/ESCP_Dunmer</li>
 	</v1.3>
 	<v1.4>
 		<li>Common</li>
 		<li>1.4</li>
-		<li IfModActive="Ludeon.RimWorld.Ideology">Mods/Ideology</li>
-		<li IfModActive="SirMashedPotato.ESCP.Dunmer">Mods/ESCP_Dunmer</li>
-		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods/VEF</li>	
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Mods/Ideology</li>
+		<li IfModActive="SirMashedPotato.ESCP.Dunmer">1.4/Mods/ESCP_Dunmer</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.4/Mods/VEF</li>	
 	</v1.4>
 </loadFolders>

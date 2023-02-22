@@ -10,50 +10,52 @@
 			<operations>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name = "ESCP_DunmerAshBurialPitBase"]/comps</xpath>
+					<xpath>Defs/ThingDef[@Name="ESCP_Dunmer_AshBurialPit_Base"]</xpath>
 					<value>
-						<li Class="CompProperties_Facility">
-							<statOffsets>
-								<WorkTableWorkSpeedFactor>0.02</WorkTableWorkSpeedFactor>
-							</statOffsets>
-							<maxSimultaneous>2</maxSimultaneous>
-						</li>
+						<comps>
+							<li Class="CompProperties_Facility">
+								<statOffsets>
+									<WorkTableWorkSpeedFactor>0.01</WorkTableWorkSpeedFactor>
+								</statOffsets>
+								<maxSimultaneous>10</maxSimultaneous>
+							</li>
+						</comps>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name = "MorrowRim_BonewalkerForge_Base"]</xpath>
+					<xpath>Defs/ThingDef[@Name = "MorrowRim_BonewalkerForge_Base"]</xpath>
 					<value>
 						<tickerType>Rare</tickerType>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_BonewalkerForge"]/placeWorkers</xpath>
+					<xpath>Defs/ThingDef[defName = "MorrowRim_BonewalkerForge"]/placeWorkers</xpath>
 					<value>
 						<li>PlaceWorker_ShowFacilitiesConnections</li>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "MorrowRim_BonewalkerForge"]/comps</xpath>
+					<xpath>Defs/ThingDef[defName = "MorrowRim_BonewalkerForge"]/comps</xpath>
 					<value>
 						<li Class="CompProperties_AffectedByFacilities">
 							<linkableFacilities>
-							  <li>ESCP_AshBurialPit</li>
-							  <li>ESCP_AshBurialPit_Round</li>
-							  <li>ESCP_AshBurialPit_Small</li>
+							  <li>ESCP_Dunmer_AshBurialPit_SquareCorner</li>
+							  <li>ESCP_Dunmer_AshBurialPit_RoundedCorner</li>
 							</linkableFacilities>
 						</li>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name = "MorrowRim_BonewalkerForge_Base"]/comps</xpath>
+					<xpath>Defs/ThingDef[@Name = "MorrowRim_BonewalkerForge_Base"]/comps</xpath>
 					<value>
 						<li Class="ESCP_RaceTools.CompProperties_DunmerGraveWhisper">
 							<soundDef>ESCP_DunmerGraveWhispering</soundDef>
 							<onlyFull>false</onlyFull>
+							<chance>0.1</chance>
 						</li>
 					</value>
 				</li>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "MorrowRim_BonewalkerLesser" or defName = "MorrowRim_BonewalkerGreater"]</xpath>
+					<value>
+						<techprintCount>1</techprintCount>
+						<techprintCommonality>1</techprintCommonality>
+						<techprintMarketValue>1000</techprintMarketValue>
+						<heldByFactionCategoryTags>
+							<li>ESCP_DunmerFaction</li>
+						</heldByFactionCategoryTags>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "MorrowRim_BonewalkerAdvanced"]</xpath>
+					<value>
+						<techprintCount>2</techprintCount>
+						<techprintCommonality>0.5</techprintCommonality>
+						<techprintMarketValue>1000</techprintMarketValue>
+						<heldByFactionCategoryTags>
+							<li>ESCP_DunmerFaction</li>
+						</heldByFactionCategoryTags>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

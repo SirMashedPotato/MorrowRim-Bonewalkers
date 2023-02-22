@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ESCP - Dunmer</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name = "ESCP_DunmerAshBurialPitBase"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_Facility">
+							<statOffsets>
+								<WorkTableWorkSpeedFactor>0.02</WorkTableWorkSpeedFactor>
+							</statOffsets>
+							<maxSimultaneous>2</maxSimultaneous>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name = "MorrowRim_BonewalkerForge_Base"]</xpath>
+					<value>
+						<tickerType>Rare</tickerType>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "MorrowRim_BonewalkerForge"]/placeWorkers</xpath>
+					<value>
+						<li>PlaceWorker_ShowFacilitiesConnections</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "MorrowRim_BonewalkerForge"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_AffectedByFacilities">
+							<linkableFacilities>
+							  <li>ESCP_AshBurialPit</li>
+							  <li>ESCP_AshBurialPit_Round</li>
+							  <li>ESCP_AshBurialPit_Small</li>
+							</linkableFacilities>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name = "MorrowRim_BonewalkerForge_Base"]/comps</xpath>
+					<value>
+						<li Class="ESCP_RaceTools.CompProperties_DunmerGraveWhisper">
+							<soundDef>ESCP_DunmerGraveWhispering</soundDef>
+							<onlyFull>false</onlyFull>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

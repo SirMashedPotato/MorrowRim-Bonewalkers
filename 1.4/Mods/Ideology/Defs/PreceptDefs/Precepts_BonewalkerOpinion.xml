@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>MorrowRim_BonewalkerOpinion</defName>
+		<label>bonewalkers</label>
+		<iconPath>UI/Issues/MorrowRim_Bonewalker_Despised</iconPath>
+	</IssueDef>
+
+	<PreceptDef>
+		<defName>MorrowRim_BonewalkerOpinion_Despised</defName>
+		<issue>MorrowRim_BonewalkerOpinion</issue>
+		<label>heretical</label>
+		<description>No matter what the Dunmer say, bonewalkers are necromantic abominations, and the creation of them should be outlawed.</description>
+		<impact>High</impact>
+		<statOffsets>
+			
+		</statOffsets>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>MorrowRim_BonewalkersInColony</thought>
+			<description>Each bonewalker in colony</description>
+		  </li>
+		</comps>
+		<conflictingMemes>
+		  <li>MorrowRim_BonewalkerSupremacy</li>
+		</conflictingMemes>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>MorrowRim_BonewalkersInColony</defName>
+		<thoughtClass>MorrowRim_Bonewalkers.Thought_Situational_Precept_BonewalkersInColony</thoughtClass>
+		<workerClass>MorrowRim_Bonewalkers.ThoughtWorker_Precept_BonewalkersInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>bonewalkers in colony</label>
+			<description>We have bonewalkers. Such accursed creations should be outlawed.</description>
+			<baseMoodEffect>-3</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

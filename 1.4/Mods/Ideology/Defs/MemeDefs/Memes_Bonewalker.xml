@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<MemeDef>
+		<defName>MorrowRim_BonewalkerSupremacy</defName>
+		<label>bonewalker supremacy</label>
+		<exclusionTags>
+			<li MayRequire="VanillaExpanded.VMemesE">AM_Combat</li>
+		</exclusionTags>
+		<description>Bonewalkers, and bonelords, are our loyal avengers and guardians. Unlike the living, they do not fail us.</description>
+		<iconPath>UI/Memes/MorrowRim_BonewalkerSupremacy</iconPath>
+		<!--<groupDef>AM_Combat</groupDef> In patch-->
+		<impact>1</impact>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->frail</li>
+				<li>memeAdjective->weak</li>
+				<li>memeAdjective->fragile</li>
+				<li>memeLeaderAdjective->steel plated</li>
+				<li>memeConcept->flesh</li>
+				<li>memeConcept->bone</li>
+				<li>memeConcept->muscle</li>
+				<li>memeLeaderNoun->guider</li>
+
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Bonewalker)        ->While [deity0_name] cares for us, [deity0_pronoun] made sure we did not grow soft. [deity0_name] made our flesh weak, and our bones brittle, but also made our minds, and our hands.</li>
+					<li>episode(uses=1,tag=meme_Bonewalker)  ->Using the knowledge bestowed upon us by [deity0_name], we reshaped the flesh and bone of the dead into our new guardians.</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Bonewalker)           ->After a long pilgrimage, we happened upon [place_summary] [place_name], our new home. Shortly after erecting our homes, [foeLeader] attacked us. Many were lost, it was made clear how frail our bodies are. But [deity0_name] came to use, and granted us the knowledge we needed.</li>
+					<li>conflict(tag=meme_Bonewalker)        ->[foeLeader] forced us into the tombs, unaware of the knowledge [deity0_name] granted us.</li>
+					<li>founderJoin(tag=meme_Bonewalker)     ->[founderName] used our newfound knowledge, and built the first of our new guardians.</li>
+					<li>victory(tag=meme_Bonewalker)         ->Using the bonewalkers created by [founderName], we reclaimed our new homeland. [founderName] fought with honour besides our creations, but was lost to a fatal blow. We readied the forge, so that [founderName] would always be with us.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Bonewalker)           ->[founderName] in an attempt to overthrow [foeLeader], began to experiment with the flesh of the dead.</li>
+					<li>story(uses=1,tag=meme_Bonewalker)    ->Using the knowledge gained, [founderName] built an army of bonewalkers, and ended [foeLeader]'s reign of terror.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Bonewalker)         ->I visited the reclusive doctor of my village, one who most avoided, in an effort to bring back those I care about.</li>
+					<li>lesson(tag=meme_Bonewalker)              ->living flesh may be weak, but the dead feel no pain</li>
+					<li>lessonReinforcement(tag=meme_Bonewalker) ->The dead are everywhere, all they need is a body to inhabit.</li>
+					<!-- archist -->
+
+					<!-- animist -->
+					<li>animistBasis(tag=meme_Bonewalker)    ->The spirits seek out the flesh of the living, but are unable to find suitable vessels.</li>
+					<li>animistFact(tag=meme_Bonewalker)     ->We must construct the vessels, pure and strong, made of bone and flesh.</li>
+					<li>animistProphecy(tag=meme_Bonewalker) ->[itIsSaid] those that provide the spirits vessels, will in turn be provided with untold knowledge.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<requireOne>
+			<li>
+				<li>MorrowRim_BonewalkerSupremecy_Durability</li>
+				<li>MorrowRim_BonewalkerSupremecy_Intelligence</li>
+				<li>MorrowRim_BonewalkerSupremecy_Quality</li>
+				<li>MorrowRim_BonewalkerSupremecy_Strength</li>
+			</li>
+
+		</requireOne>
+		<symbolPacks>
+			<li>
+				<ideoName>Bone</ideoName>
+				<theme>bone</theme>
+				<adjective>bone</adjective>
+				<member>sculptor</member>
+			</li>
+			<li>
+				<ideoName>Flesh</ideoName>
+				<theme>flesh</theme>
+				<adjective>flesh</adjective>
+				<member>shaper</member>
+			</li>
+			<li>
+				<ideoName>Muscle</ideoName>
+				<theme>muscle</theme>
+				<adjective>muscle</adjective>
+				<member>forger</member>
+			</li>
+		</symbolPacks>
+		<startingResearchProjects>
+			<li>MorrowRim_BonewalkerLesser</li>
+		</startingResearchProjects>
+	</MemeDef>
+
+</Defs>
